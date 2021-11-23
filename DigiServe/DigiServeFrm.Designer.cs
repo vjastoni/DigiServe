@@ -1,7 +1,7 @@
 ﻿
 namespace DigiServe
 {
-    partial class Form1
+    partial class DigiServeFrm
     {
         /// <summary>
         ///  Required designer variable.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DigiServe
 {
-    public partial class Form1 : Form
+    public partial class DigiServeFrm : Form
     {
-        public Form1()
+        public DigiServeFrm()
         {
             InitializeComponent();
         }
