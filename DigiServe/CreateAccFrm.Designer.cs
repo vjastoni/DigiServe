@@ -35,9 +35,9 @@ namespace DigiServe
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.btnCreateAcc = new System.Windows.Forms.Button();
+            this.radioBtnFemale = new System.Windows.Forms.RadioButton();
+            this.radioBtnMale = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,12 +45,12 @@ namespace DigiServe
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.txtUname = new System.Windows.Forms.TextBox();
+            this.txtMobileNo = new System.Windows.Forms.TextBox();
+            this.txtEmail_ = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -93,9 +93,9 @@ namespace DigiServe
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.btnCreateAcc);
+            this.panel1.Controls.Add(this.radioBtnFemale);
+            this.panel1.Controls.Add(this.radioBtnMale);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -103,12 +103,12 @@ namespace DigiServe
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtPass);
+            this.panel1.Controls.Add(this.txtUname);
+            this.panel1.Controls.Add(this.txtMobileNo);
+            this.panel1.Controls.Add(this.txtEmail_);
+            this.panel1.Controls.Add(this.txtLastName);
+            this.panel1.Controls.Add(this.txtFirstName);
             this.panel1.Location = new System.Drawing.Point(58, 213);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(809, 298);
@@ -136,40 +136,40 @@ namespace DigiServe
             this.label9.TabIndex = 16;
             this.label9.Text = "Already have an account?";
             // 
-            // button1
+            // btnCreateAcc
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(44)))));
-            this.button1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(464, 186);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(225, 42);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Create Account";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCreateAcc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(44)))));
+            this.btnCreateAcc.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCreateAcc.Location = new System.Drawing.Point(464, 186);
+            this.btnCreateAcc.Name = "btnCreateAcc";
+            this.btnCreateAcc.Size = new System.Drawing.Size(225, 42);
+            this.btnCreateAcc.TabIndex = 15;
+            this.btnCreateAcc.Text = "Create Account";
+            this.btnCreateAcc.UseVisualStyleBackColor = false;
             // 
-            // radioButton2
+            // radioBtnFemale
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.radioButton2.Location = new System.Drawing.Point(614, 150);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(75, 21);
-            this.radioButton2.TabIndex = 14;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioBtnFemale.AutoSize = true;
+            this.radioBtnFemale.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.radioBtnFemale.Location = new System.Drawing.Point(614, 150);
+            this.radioBtnFemale.Name = "radioBtnFemale";
+            this.radioBtnFemale.Size = new System.Drawing.Size(75, 21);
+            this.radioBtnFemale.TabIndex = 14;
+            this.radioBtnFemale.TabStop = true;
+            this.radioBtnFemale.Text = "Female";
+            this.radioBtnFemale.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radioBtnMale
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.radioButton1.Location = new System.Drawing.Point(530, 150);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(58, 21);
-            this.radioButton1.TabIndex = 13;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioBtnMale.AutoSize = true;
+            this.radioBtnMale.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.radioBtnMale.Location = new System.Drawing.Point(530, 150);
+            this.radioBtnMale.Name = "radioBtnMale";
+            this.radioBtnMale.Size = new System.Drawing.Size(58, 21);
+            this.radioBtnMale.TabIndex = 13;
+            this.radioBtnMale.TabStop = true;
+            this.radioBtnMale.Text = "Male";
+            this.radioBtnMale.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -241,47 +241,47 @@ namespace DigiServe
             this.label1.TabIndex = 6;
             this.label1.Text = "First name:";
             // 
-            // textBox6
+            // txtPass
             // 
-            this.textBox6.Location = new System.Drawing.Point(530, 98);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(159, 23);
-            this.textBox6.TabIndex = 5;
+            this.txtPass.Location = new System.Drawing.Point(530, 98);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(159, 23);
+            this.txtPass.TabIndex = 5;
             // 
-            // textBox5
+            // txtUname
             // 
-            this.textBox5.Location = new System.Drawing.Point(530, 51);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(159, 23);
-            this.textBox5.TabIndex = 4;
+            this.txtUname.Location = new System.Drawing.Point(530, 51);
+            this.txtUname.Name = "txtUname";
+            this.txtUname.Size = new System.Drawing.Size(159, 23);
+            this.txtUname.TabIndex = 4;
             // 
-            // textBox4
+            // txtMobileNo
             // 
-            this.textBox4.Location = new System.Drawing.Point(175, 197);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(155, 23);
-            this.textBox4.TabIndex = 3;
+            this.txtMobileNo.Location = new System.Drawing.Point(175, 197);
+            this.txtMobileNo.Name = "txtMobileNo";
+            this.txtMobileNo.Size = new System.Drawing.Size(155, 23);
+            this.txtMobileNo.TabIndex = 3;
             // 
-            // textBox3
+            // txtEmail_
             // 
-            this.textBox3.Location = new System.Drawing.Point(175, 149);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(155, 23);
-            this.textBox3.TabIndex = 2;
+            this.txtEmail_.Location = new System.Drawing.Point(175, 149);
+            this.txtEmail_.Name = "txtEmail_";
+            this.txtEmail_.Size = new System.Drawing.Size(155, 23);
+            this.txtEmail_.TabIndex = 2;
             // 
-            // textBox2
+            // txtLastName
             // 
-            this.textBox2.Location = new System.Drawing.Point(175, 98);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(155, 23);
-            this.textBox2.TabIndex = 1;
+            this.txtLastName.Location = new System.Drawing.Point(175, 98);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(155, 23);
+            this.txtLastName.TabIndex = 1;
             // 
-            // textBox1
+            // txtFirstName
             // 
-            this.textBox1.Location = new System.Drawing.Point(175, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 23);
-            this.textBox1.TabIndex = 0;
+            this.txtFirstName.Location = new System.Drawing.Point(175, 51);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(155, 23);
+            this.txtFirstName.TabIndex = 0;
             // 
             // CreateAccFrm
             // 
@@ -311,21 +311,21 @@ namespace DigiServe
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.TextBox txtUname;
+        private System.Windows.Forms.TextBox txtMobileNo;
+        private System.Windows.Forms.TextBox txtEmail_;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.RadioButton radioBtnFemale;
+        private System.Windows.Forms.RadioButton radioBtnMale;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCreateAcc;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
     }

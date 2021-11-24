@@ -83,6 +83,36 @@ namespace DigiServe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DigiServe1 {
+            get {
+                object obj = ResourceManager.GetObject("DigiServe1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DigiServe2 {
+            get {
+                object obj = ResourceManager.GetObject("DigiServe2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DigiServe3 {
+            get {
+                object obj = ResourceManager.GetObject("DigiServe3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ribbon {
             get {
                 object obj = ResourceManager.GetObject("ribbon", resourceCulture);
@@ -96,6 +126,66 @@ namespace DigiServe.Properties {
         internal static System.Drawing.Bitmap Screen_Shot_2021_11_23_at_2_25_29_PM {
             get {
                 object obj = ResourceManager.GetObject("Screen Shot 2021-11-23 at 2.25.29 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2021_11_23_at_2_251 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2021-11-23 at 2.251", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2021_11_23_at_2_252 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2021-11-23 at 2.252", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2021_11_23_at_9_20_41_PM {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2021-11-23 at 9.20.41 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2021_11_23_at_9_201 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2021-11-23 at 9.201", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2021_11_23_at_9_202 {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2021-11-23 at 9.202", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screen_Shot_2021_11_24_at_11_32_24_AM {
+            get {
+                object obj = ResourceManager.GetObject("Screen Shot 2021-11-24 at 11.32.24 AM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

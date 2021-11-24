@@ -118,16 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="design1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\design1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DigiServe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DigiServe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Screen Shot 2021-11-23 at 2.25.29 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2021-11-23 at 2.25.29 PM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ribbon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ribbon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Screen Shot 2021-11-23 at 2.25.29 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screen Shot 2021-11-23 at 2.25.29 PM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DigiServe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DigiServe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2021-11-24 at 11.32.24 AM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2021-11-24 at 11.32.24 AM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DigiServe1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DigiServe1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2021-11-23 at 2.251" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2021-11-23 at 2.25.29 PM1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DigiServe3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DigiServe3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2021-11-23 at 9.202" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2021-11-23 at 9.20.41 PM2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2021-11-23 at 9.201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2021-11-23 at 9.20.41 PM1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DigiServe2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DigiServe2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="design1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\design1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2021-11-23 at 9.20.41 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2021-11-23 at 9.20.41 PM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screen Shot 2021-11-23 at 2.252" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2021-11-23 at 2.25.29 PM2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

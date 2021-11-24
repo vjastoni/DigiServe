@@ -19,8 +19,6 @@ namespace DigiServe
 
 
 
-
-
         private void label6_Click(object sender, EventArgs e)
         {
             CreateAccFrm cr8AcctFrm = new CreateAccFrm();
