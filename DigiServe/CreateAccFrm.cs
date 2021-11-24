@@ -14,5 +14,12 @@ namespace DigiServe
         {
             InitializeComponent();
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            DigiServeFrm loginFrm = new DigiServeFrm();
+            loginFrm.Show();
+            this.Hide();
+        }
     }
 }

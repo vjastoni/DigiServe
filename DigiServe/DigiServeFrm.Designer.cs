@@ -86,6 +86,7 @@ namespace DigiServe
             this.label6.Size = new System.Drawing.Size(62, 18);
             this.label6.TabIndex = 16;
             this.label6.Text = "Sign up";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -157,7 +158,7 @@ namespace DigiServe
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DigiServe.Properties.Resources.design1;
-            this.pictureBox2.Location = new System.Drawing.Point(41, 187);
+            this.pictureBox2.Location = new System.Drawing.Point(40, 190);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(352, 419);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -197,7 +198,7 @@ namespace DigiServe
             this.pictureBox3.TabIndex = 14;
             this.pictureBox3.TabStop = false;
             // 
-            // Form1
+            // DigiServeFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -209,7 +210,7 @@ namespace DigiServe
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
-            this.Name = "Form1";
+            this.Name = "DigiServeFrm";
             this.Text = "DigiServe";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);

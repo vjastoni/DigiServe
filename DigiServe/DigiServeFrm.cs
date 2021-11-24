@@ -17,5 +17,11 @@ namespace DigiServe
             InitializeComponent();
         }
 
+        private void label6_Click(object sender, EventArgs e)
+        {
+            CreateAccFrm cr8Acct = new CreateAccFrm();
+            cr8Acct.Show();
+            this.Hide();
+        }
     }
 }
