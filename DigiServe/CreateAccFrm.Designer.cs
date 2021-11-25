@@ -36,8 +36,6 @@ namespace DigiServe
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnCreateAcc = new System.Windows.Forms.Button();
-            this.radioBtnFemale = new System.Windows.Forms.RadioButton();
-            this.radioBtnMale = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,6 +49,7 @@ namespace DigiServe
             this.txtEmail_ = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.cmbGender = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -91,11 +90,10 @@ namespace DigiServe
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.cmbGender);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.btnCreateAcc);
-            this.panel1.Controls.Add(this.radioBtnFemale);
-            this.panel1.Controls.Add(this.radioBtnMale);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -146,30 +144,7 @@ namespace DigiServe
             this.btnCreateAcc.TabIndex = 15;
             this.btnCreateAcc.Text = "Create Account";
             this.btnCreateAcc.UseVisualStyleBackColor = false;
-            // 
-            // radioBtnFemale
-            // 
-            this.radioBtnFemale.AutoSize = true;
-            this.radioBtnFemale.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.radioBtnFemale.Location = new System.Drawing.Point(614, 150);
-            this.radioBtnFemale.Name = "radioBtnFemale";
-            this.radioBtnFemale.Size = new System.Drawing.Size(75, 21);
-            this.radioBtnFemale.TabIndex = 14;
-            this.radioBtnFemale.TabStop = true;
-            this.radioBtnFemale.Text = "Female";
-            this.radioBtnFemale.UseVisualStyleBackColor = true;
-            // 
-            // radioBtnMale
-            // 
-            this.radioBtnMale.AutoSize = true;
-            this.radioBtnMale.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.radioBtnMale.Location = new System.Drawing.Point(530, 150);
-            this.radioBtnMale.Name = "radioBtnMale";
-            this.radioBtnMale.Size = new System.Drawing.Size(58, 21);
-            this.radioBtnMale.TabIndex = 13;
-            this.radioBtnMale.TabStop = true;
-            this.radioBtnMale.Text = "Male";
-            this.radioBtnMale.UseVisualStyleBackColor = true;
+            this.btnCreateAcc.Click += new System.EventHandler(this.btnCreateAcc_Click);
             // 
             // label8
             // 
@@ -283,6 +258,18 @@ namespace DigiServe
             this.txtFirstName.Size = new System.Drawing.Size(155, 23);
             this.txtFirstName.TabIndex = 0;
             // 
+            // cmbGender
+            // 
+            this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Others"});
+            this.cmbGender.Location = new System.Drawing.Point(539, 148);
+            this.cmbGender.Name = "cmbGender";
+            this.cmbGender.Size = new System.Drawing.Size(121, 23);
+            this.cmbGender.TabIndex = 18;
+            // 
             // CreateAccFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -317,8 +304,6 @@ namespace DigiServe
         private System.Windows.Forms.TextBox txtEmail_;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.TextBox txtFirstName;
-        private System.Windows.Forms.RadioButton radioBtnFemale;
-        private System.Windows.Forms.RadioButton radioBtnMale;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -328,5 +313,6 @@ namespace DigiServe
         private System.Windows.Forms.Button btnCreateAcc;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cmbGender;
     }
 }
