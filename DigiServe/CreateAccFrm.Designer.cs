@@ -33,6 +33,7 @@ namespace DigiServe
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbGender = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnCreateAcc = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@ namespace DigiServe
             this.txtEmail_ = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtFirstName = new System.Windows.Forms.TextBox();
-            this.cmbGender = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -111,6 +111,18 @@ namespace DigiServe
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(809, 298);
             this.panel1.TabIndex = 18;
+            // 
+            // cmbGender
+            // 
+            this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Others"});
+            this.cmbGender.Location = new System.Drawing.Point(539, 148);
+            this.cmbGender.Name = "cmbGender";
+            this.cmbGender.Size = new System.Drawing.Size(121, 23);
+            this.cmbGender.TabIndex = 18;
             // 
             // label10
             // 
@@ -220,6 +232,7 @@ namespace DigiServe
             // 
             this.txtPass.Location = new System.Drawing.Point(530, 98);
             this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '●';
             this.txtPass.Size = new System.Drawing.Size(159, 23);
             this.txtPass.TabIndex = 5;
             // 
@@ -257,18 +270,6 @@ namespace DigiServe
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(155, 23);
             this.txtFirstName.TabIndex = 0;
-            // 
-            // cmbGender
-            // 
-            this.cmbGender.FormattingEnabled = true;
-            this.cmbGender.Items.AddRange(new object[] {
-            "Male",
-            "Female",
-            "Others"});
-            this.cmbGender.Location = new System.Drawing.Point(539, 148);
-            this.cmbGender.Name = "cmbGender";
-            this.cmbGender.Size = new System.Drawing.Size(121, 23);
-            this.cmbGender.TabIndex = 18;
             // 
             // CreateAccFrm
             // 
