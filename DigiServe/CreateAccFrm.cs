@@ -22,6 +22,7 @@ namespace DigiServe
             DigiServeFrm loginFrm = new DigiServeFrm();
             loginFrm.Show();
             this.Hide();
+
         }
 
         private void btnCreateAcc_Click(object sender, EventArgs e)
