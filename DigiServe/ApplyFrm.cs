@@ -77,7 +77,7 @@ namespace DigiServe
             // Reservation pop up effect
             float UpSize;
             UpSize = lblReservation.Font.Size;
-            UpSize = 15.0F;
+            UpSize = 16.0F;
             lblReservation.Font = new Font(lblReservation.Font.Name, UpSize, lblReservation.Font.Style, lblReservation.Font.Unit);
             lblReservation.ForeColor = Color.Gold;
             // About Digi Default format
@@ -105,7 +105,7 @@ namespace DigiServe
             // Scholar pop up effect
             float UpSize;
             UpSize = lblScholar.Font.Size;
-            UpSize = 15.0F;
+            UpSize = 16.0F;
             lblScholar.Font = new Font(lblScholar.Font.Name, UpSize, lblScholar.Font.Style, lblScholar.Font.Unit);
             lblScholar.ForeColor = Color.Gold;
             // About Digi Default format
