@@ -53,7 +53,7 @@ namespace DigiServe
             this.lblAboutDigi = new System.Windows.Forms.Label();
             this.lblServices = new System.Windows.Forms.Label();
             this.lblReservation = new System.Windows.Forms.Label();
-            this.lblScholar = new System.Windows.Forms.Label();
+            this.lblRecord = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -294,6 +294,7 @@ namespace DigiServe
             // 
             this.lblAboutDigi.AutoSize = true;
             this.lblAboutDigi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
+            this.lblAboutDigi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblAboutDigi.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAboutDigi.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblAboutDigi.Location = new System.Drawing.Point(301, 100);
@@ -302,11 +303,14 @@ namespace DigiServe
             this.lblAboutDigi.TabIndex = 3;
             this.lblAboutDigi.Text = "About DigiServe";
             this.lblAboutDigi.Click += new System.EventHandler(this.lblAboutDigi_Click);
+            this.lblAboutDigi.MouseLeave += new System.EventHandler(this.lblAboutDigi_MouseLeave);
+            this.lblAboutDigi.MouseHover += new System.EventHandler(this.lblAboutDigi_MouseHover);
             // 
             // lblServices
             // 
             this.lblServices.AutoSize = true;
             this.lblServices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
+            this.lblServices.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblServices.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblServices.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblServices.Location = new System.Drawing.Point(513, 100);
@@ -315,11 +319,14 @@ namespace DigiServe
             this.lblServices.TabIndex = 4;
             this.lblServices.Text = "Services";
             this.lblServices.Click += new System.EventHandler(this.lblServices_Click);
+            this.lblServices.MouseLeave += new System.EventHandler(this.lblServices_MouseLeave);
+            this.lblServices.MouseHover += new System.EventHandler(this.lblServices_MouseHover);
             // 
             // lblReservation
             // 
             this.lblReservation.AutoSize = true;
             this.lblReservation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
+            this.lblReservation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblReservation.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblReservation.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblReservation.Location = new System.Drawing.Point(643, 100);
@@ -328,19 +335,24 @@ namespace DigiServe
             this.lblReservation.TabIndex = 5;
             this.lblReservation.Text = "Reservation";
             this.lblReservation.Click += new System.EventHandler(this.lblReservation_Click);
+            this.lblReservation.MouseLeave += new System.EventHandler(this.lblReservation_MouseLeave);
+            this.lblReservation.MouseHover += new System.EventHandler(this.lblReservation_MouseHover);
             // 
-            // lblScholar
+            // lblRecord
             // 
-            this.lblScholar.AutoSize = true;
-            this.lblScholar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
-            this.lblScholar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblScholar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblScholar.Location = new System.Drawing.Point(810, 100);
-            this.lblScholar.Name = "lblScholar";
-            this.lblScholar.Size = new System.Drawing.Size(164, 28);
-            this.lblScholar.TabIndex = 6;
-            this.lblScholar.Text = "Scholarships";
-            this.lblScholar.Click += new System.EventHandler(this.lblScholar_Click);
+            this.lblRecord.AutoSize = true;
+            this.lblRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
+            this.lblRecord.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblRecord.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblRecord.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblRecord.Location = new System.Drawing.Point(810, 100);
+            this.lblRecord.Name = "lblRecord";
+            this.lblRecord.Size = new System.Drawing.Size(97, 28);
+            this.lblRecord.TabIndex = 6;
+            this.lblRecord.Text = "Record";
+            this.lblRecord.Click += new System.EventHandler(this.lblRecord_Click);
+            this.lblRecord.MouseLeave += new System.EventHandler(this.lblRecord_MouseLeave);
+            this.lblRecord.MouseHover += new System.EventHandler(this.lblRecord_MouseHover);
             // 
             // label5
             // 
@@ -359,7 +371,7 @@ namespace DigiServe
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(206)))), ((int)(((byte)(79)))));
             this.ClientSize = new System.Drawing.Size(1189, 869);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.lblScholar);
+            this.Controls.Add(this.lblRecord);
             this.Controls.Add(this.lblReservation);
             this.Controls.Add(this.lblServices);
             this.Controls.Add(this.lblAboutDigi);
@@ -395,7 +407,7 @@ namespace DigiServe
         private System.Windows.Forms.Label lblAboutDigi;
         private System.Windows.Forms.Label lblServices;
         private System.Windows.Forms.Label lblReservation;
-        private System.Windows.Forms.Label lblScholar;
+        private System.Windows.Forms.Label lblRecord;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.TextBox txtDateTime;
