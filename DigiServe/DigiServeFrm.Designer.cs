@@ -52,9 +52,10 @@ namespace DigiServe
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DigiServe.Properties.Resources.DigiServe;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(14, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(223, 172);
+            this.pictureBox1.Size = new System.Drawing.Size(255, 229);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -71,30 +72,34 @@ namespace DigiServe
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtUsername);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(446, 210);
+            this.panel1.Location = new System.Drawing.Point(510, 280);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(488, 313);
+            this.panel1.Size = new System.Drawing.Size(557, 417);
             this.panel1.TabIndex = 9;
             // 
             // lblSignUp
             // 
             this.lblSignUp.AutoSize = true;
+            this.lblSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblSignUp.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblSignUp.ForeColor = System.Drawing.Color.White;
-            this.lblSignUp.Location = new System.Drawing.Point(289, 255);
+            this.lblSignUp.Location = new System.Drawing.Point(330, 340);
             this.lblSignUp.Name = "lblSignUp";
-            this.lblSignUp.Size = new System.Drawing.Size(62, 18);
+            this.lblSignUp.Size = new System.Drawing.Size(81, 22);
             this.lblSignUp.TabIndex = 16;
             this.lblSignUp.Text = "Sign up";
-            this.lblSignUp.Click += new System.EventHandler(this.label6_Click);
+            this.lblSignUp.Click += new System.EventHandler(this.lblSignUp_Click);
+            this.lblSignUp.MouseLeave += new System.EventHandler(this.lblSignUp_MouseLeave);
+            this.lblSignUp.MouseHover += new System.EventHandler(this.lblSignUp_MouseHover);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(131, 255);
+            this.label5.Location = new System.Drawing.Point(150, 340);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(161, 17);
+            this.label5.Size = new System.Drawing.Size(206, 22);
             this.label5.TabIndex = 15;
             this.label5.Text = "Don\'t have an account?";
             // 
@@ -103,9 +108,10 @@ namespace DigiServe
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(44)))));
             this.btnLogin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.ForeColor = System.Drawing.Color.Black;
-            this.btnLogin.Location = new System.Drawing.Point(190, 191);
+            this.btnLogin.Location = new System.Drawing.Point(217, 255);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(144, 34);
+            this.btnLogin.Size = new System.Drawing.Size(165, 45);
             this.btnLogin.TabIndex = 14;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -116,53 +122,56 @@ namespace DigiServe
             this.lblForgotpass.AutoSize = true;
             this.lblForgotpass.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblForgotpass.ForeColor = System.Drawing.Color.White;
-            this.lblForgotpass.Location = new System.Drawing.Point(252, 139);
+            this.lblForgotpass.Location = new System.Drawing.Point(288, 185);
             this.lblForgotpass.Name = "lblForgotpass";
-            this.lblForgotpass.Size = new System.Drawing.Size(136, 18);
+            this.lblForgotpass.Size = new System.Drawing.Size(181, 22);
             this.lblForgotpass.TabIndex = 13;
             this.lblForgotpass.Text = "Forgot password?";
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(190, 103);
+            this.txtPassword.Location = new System.Drawing.Point(217, 137);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '●';
-            this.txtPassword.Size = new System.Drawing.Size(198, 23);
+            this.txtPassword.Size = new System.Drawing.Size(226, 27);
             this.txtPassword.TabIndex = 12;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(100, 110);
+            this.label3.Location = new System.Drawing.Point(114, 147);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 18);
+            this.label3.Size = new System.Drawing.Size(110, 22);
             this.label3.TabIndex = 11;
             this.label3.Text = "Password:";
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(190, 50);
+            this.txtUsername.Location = new System.Drawing.Point(217, 67);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(198, 23);
+            this.txtUsername.Size = new System.Drawing.Size(226, 27);
             this.txtUsername.TabIndex = 10;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(100, 57);
+            this.label1.Location = new System.Drawing.Point(114, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 18);
+            this.label1.Size = new System.Drawing.Size(111, 22);
             this.label1.TabIndex = 9;
             this.label1.Text = "Username:";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DigiServe.Properties.Resources.design1;
-            this.pictureBox2.Location = new System.Drawing.Point(41, 190);
+            this.pictureBox2.Location = new System.Drawing.Point(47, 253);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(352, 419);
+            this.pictureBox2.Size = new System.Drawing.Size(402, 559);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
@@ -172,9 +181,9 @@ namespace DigiServe
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.label2.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(564, 61);
+            this.label2.Location = new System.Drawing.Point(645, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(225, 34);
+            this.label2.Size = new System.Drawing.Size(293, 44);
             this.label2.TabIndex = 12;
             this.label2.Text = "Welcome Back!";
             // 
@@ -184,34 +193,36 @@ namespace DigiServe
             this.lblLogAcc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.lblLogAcc.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblLogAcc.ForeColor = System.Drawing.Color.White;
-            this.lblLogAcc.Location = new System.Drawing.Point(601, 106);
+            this.lblLogAcc.Location = new System.Drawing.Point(687, 141);
             this.lblLogAcc.Name = "lblLogAcc";
-            this.lblLogAcc.Size = new System.Drawing.Size(161, 18);
+            this.lblLogAcc.Size = new System.Drawing.Size(214, 22);
             this.lblLogAcc.TabIndex = 13;
             this.lblLogAcc.Text = "Login to your account";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::DigiServe.Properties.Resources.Screen_Shot_2021_11_23_at_2_25_29_PM;
-            this.pictureBox3.Location = new System.Drawing.Point(258, 28);
+            this.pictureBox3.Location = new System.Drawing.Point(295, 37);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(758, 135);
+            this.pictureBox3.Size = new System.Drawing.Size(866, 180);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 14;
             this.pictureBox3.TabStop = false;
             // 
             // DigiServeFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(206)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(994, 579);
+            this.ClientSize = new System.Drawing.Size(1136, 772);
             this.Controls.Add(this.lblLogAcc);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "DigiServeFrm";
             this.Text = "DigiServe";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
