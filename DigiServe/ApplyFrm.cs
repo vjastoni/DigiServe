@@ -36,7 +36,7 @@ namespace DigiServe
             
         }
 
-        private void lblRecord_Click(object sender, EventArgs e)
+        private void lblRecords_Click(object sender, EventArgs e)
         {
             // open record form
             Records rec = new Records();
@@ -103,6 +103,25 @@ namespace DigiServe
             lblReservation.ForeColor = SystemColors.ControlLightLight;
         }
 
+        private void lblRecords_MouseHover(object sender, EventArgs e)
+        {
+            // Records pop up effect
+            float UpSize;
+            UpSize = lblRecords.Font.Size;
+            UpSize = 16.0F;
+            lblRecords.Font = new Font(lblRecords.Font.Name, UpSize, lblRecords.Font.Style, lblRecords.Font.Unit);
+            lblRecords.ForeColor = Color.Gold;
+        }
+
+        private void lblRecords_MouseLeave(object sender, EventArgs e)
+        {
+            // Resccords Default format
+            float downSizeR;
+            downSizeR = lblRecords.Font.Size;
+            downSizeR = 14.25F;
+            lblRecords.Font = new Font(lblRecords.Font.Name, downSizeR, lblRecords.Font.Style, lblRecords.Font.Unit);
+            lblRecords.ForeColor = SystemColors.ControlLightLight;
+        }
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-8HAO55D\SQLEXPRESS;Initial Catalog=DB_Reservation;Integrated Security=True");
@@ -122,5 +141,6 @@ namespace DigiServe
             con.Close();
             MessageBox.Show("Submitted Successfully!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
     }
 }
