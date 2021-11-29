@@ -143,6 +143,7 @@ namespace DigiServe
            ,[Sched/Pickup]
            ,[Date])
      VALUES
+
            ('"+txtFname.Text+"', '"+txtLname.Text+"', '"+txtEmail.Text+"', '"+txtMobileNumber.Text+"', '"+cmbGender.SelectedItem.ToString()+"', '"+txtRequest.Text+"', '"+txtSched.Text+"', '"+txtDateTime.Text+"')");
         }
     }
