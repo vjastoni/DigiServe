@@ -82,11 +82,11 @@ namespace DigiServe
             // 
             this.lblSignUp.AutoSize = true;
             this.lblSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblSignUp.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSignUp.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblSignUp.ForeColor = System.Drawing.Color.White;
             this.lblSignUp.Location = new System.Drawing.Point(330, 340);
             this.lblSignUp.Name = "lblSignUp";
-            this.lblSignUp.Size = new System.Drawing.Size(81, 22);
+            this.lblSignUp.Size = new System.Drawing.Size(76, 21);
             this.lblSignUp.TabIndex = 16;
             this.lblSignUp.Text = "Sign up";
             this.lblSignUp.Click += new System.EventHandler(this.lblSignUp_Click);
