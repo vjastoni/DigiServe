@@ -31,6 +31,7 @@ namespace DigiServe
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbGender = new System.Windows.Forms.ComboBox();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.txtDateTime = new System.Windows.Forms.TextBox();
             this.txtSched = new System.Windows.Forms.TextBox();
@@ -53,7 +54,6 @@ namespace DigiServe
             this.lblReservation = new System.Windows.Forms.Label();
             this.lblRecord = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.cmbGender = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -62,7 +62,7 @@ namespace DigiServe
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DigiServe.Properties.Resources.DigiServe1;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 26);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(166, 164);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -93,6 +93,18 @@ namespace DigiServe
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(947, 377);
             this.panel1.TabIndex = 1;
+            // 
+            // cmbGender
+            // 
+            this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Others"});
+            this.cmbGender.Location = new System.Drawing.Point(156, 277);
+            this.cmbGender.Name = "cmbGender";
+            this.cmbGender.Size = new System.Drawing.Size(121, 23);
+            this.cmbGender.TabIndex = 18;
             // 
             // btnSubmit
             // 
@@ -302,16 +314,10 @@ namespace DigiServe
             // 
             // lblRecord
             // 
-            this.lblScholar.AutoSize = true;
-            this.lblScholar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
-            this.lblScholar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblScholar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblScholar.Location = new System.Drawing.Point(810, 100);
-            this.lblScholar.Name = "lblScholar";
-            this.lblScholar.Size = new System.Drawing.Size(164, 28);
-            this.lblScholar.TabIndex = 6;
-            this.lblScholar.Text = "Scholarships";
-            this.lblScholar.Click += new System.EventHandler(this.lblScholar_Click);
+            this.lblRecord.Location = new System.Drawing.Point(0, 0);
+            this.lblRecord.Name = "lblRecord";
+            this.lblRecord.Size = new System.Drawing.Size(100, 23);
+            this.lblRecord.TabIndex = 8;
             // 
             // label5
             // 
@@ -322,18 +328,6 @@ namespace DigiServe
             this.label5.Size = new System.Drawing.Size(333, 22);
             this.label5.TabIndex = 7;
             this.label5.Text = "Reservation for tuition fee payment ";
-            // 
-            // cmbGender
-            // 
-            this.cmbGender.FormattingEnabled = true;
-            this.cmbGender.Items.AddRange(new object[] {
-            "Male",
-            "Female",
-            "Others"});
-            this.cmbGender.Location = new System.Drawing.Point(156, 277);
-            this.cmbGender.Name = "cmbGender";
-            this.cmbGender.Size = new System.Drawing.Size(121, 23);
-            this.cmbGender.TabIndex = 18;
             // 
             // ApplyFrm
             // 

@@ -102,5 +102,25 @@ namespace DigiServe
             lblReservation.Font = new Font(lblReservation.Font.Name, downSizeR, lblReservation.Font.Style, lblReservation.Font.Unit);
             lblReservation.ForeColor = SystemColors.ControlLightLight;
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-8HAO55D\SQLEXPRESS;Initial Catalog=DB_Reservation;Integrated Security=True");
+            SqlCommand cmd = new SqlCommand(@"INSERT INTO [dbo].[Reservation]
+           ([firstname]
+           ,[lastname]
+           ,[email]
+           ,[mobileNo]
+           ,[Gender]
+           ,[Request]
+           ,[Sched/Pickup]
+           ,[Date])
+     VALUES
+           ('"+txtFname.Text+"', '"+txtLname.Text+"', '"+txtEmail.Text+"', '"+txtMobileNumber.Text+"', '"+cmbGender.SelectedItem.ToString()+"', '"+txtRequest.Text+"', '"+txtSched.Text+"', '"+txtDateTime.Text+"')", con);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Submitted Successfully!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
