@@ -132,6 +132,7 @@ namespace DigiServe
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+
             SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-8HAO55D\SQLEXPRESS;Initial Catalog=DB_Reservation;Integrated Security=True");
             SqlCommand cmd = new SqlCommand(@"INSERT INTO [dbo].[Reservation]
            ([firstname]
@@ -143,7 +144,6 @@ namespace DigiServe
            ,[Sched/Pickup]
            ,[Date])
      VALUES
-
            ('"+txtFname.Text+"', '"+txtLname.Text+"', '"+txtEmail.Text+"', '"+txtMobileNumber.Text+"', '"+cmbGender.SelectedItem.ToString()+"', '"+txtRequest.Text+"', '"+txtSched.Text+"', '"+txtDateTime.Text+"')");
         }
     }
