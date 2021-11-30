@@ -28,7 +28,7 @@ namespace DigiServe
             sda.Fill(dtbl);
             if (dtbl.Rows.Count == 1)
             {
-                CreateAccFrm tryFrame = new CreateAccFrm();
+                ApplyFrm tryFrame = new ApplyFrm();
                 this.Hide();
                 tryFrame.Show();
             }
