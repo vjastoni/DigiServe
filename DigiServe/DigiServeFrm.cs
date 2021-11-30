@@ -48,7 +48,7 @@ namespace DigiServe
         private void lblSignUp_MouseLeave(object sender, EventArgs e)
         {
             // changes the font to its default font 
-            lblSignUp.Font = new Font("Arial Rounded MT", lblSignUp.Font.Size);
+            lblSignUp.Font = new Font(lblSignUp.Font.Name, lblSignUp.Font.SizeInPoints, FontStyle.Bold);
             lblSignUp.ForeColor = SystemColors.ControlLightLight;
         }
 
