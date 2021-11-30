@@ -29,6 +29,7 @@ namespace DigiServe
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApplyFrm));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmbGender = new System.Windows.Forms.ComboBox();
@@ -63,10 +64,9 @@ namespace DigiServe
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DigiServe.Properties.Resources.DigiServe1;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 35);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 26);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(190, 219);
+            this.pictureBox1.Size = new System.Drawing.Size(166, 164);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -91,10 +91,9 @@ namespace DigiServe
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(49, 315);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Location = new System.Drawing.Point(43, 236);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1082, 503);
+            this.panel1.Size = new System.Drawing.Size(947, 377);
             this.panel1.TabIndex = 1;
             // 
             // cmbGender
@@ -104,20 +103,18 @@ namespace DigiServe
             "Male",
             "Female",
             "Others"});
-            this.cmbGender.Location = new System.Drawing.Point(178, 369);
-            this.cmbGender.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cmbGender.Location = new System.Drawing.Point(156, 277);
             this.cmbGender.Name = "cmbGender";
-            this.cmbGender.Size = new System.Drawing.Size(138, 28);
+            this.cmbGender.Size = new System.Drawing.Size(121, 23);
             this.cmbGender.TabIndex = 18;
             // 
             // btnSubmit
             // 
             this.btnSubmit.BackColor = System.Drawing.Color.Gold;
             this.btnSubmit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSubmit.Location = new System.Drawing.Point(773, 311);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSubmit.Location = new System.Drawing.Point(676, 233);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(162, 48);
+            this.btnSubmit.Size = new System.Drawing.Size(142, 36);
             this.btnSubmit.TabIndex = 17;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
@@ -125,38 +122,35 @@ namespace DigiServe
             // 
             // txtDateTime
             // 
-            this.txtDateTime.Location = new System.Drawing.Point(743, 216);
-            this.txtDateTime.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDateTime.Location = new System.Drawing.Point(650, 162);
             this.txtDateTime.Multiline = true;
             this.txtDateTime.Name = "txtDateTime";
-            this.txtDateTime.Size = new System.Drawing.Size(212, 33);
+            this.txtDateTime.Size = new System.Drawing.Size(186, 26);
             this.txtDateTime.TabIndex = 16;
             // 
             // txtSched
             // 
-            this.txtSched.Location = new System.Drawing.Point(743, 141);
-            this.txtSched.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSched.Location = new System.Drawing.Point(650, 106);
             this.txtSched.Multiline = true;
             this.txtSched.Name = "txtSched";
-            this.txtSched.Size = new System.Drawing.Size(212, 33);
+            this.txtSched.Size = new System.Drawing.Size(186, 26);
             this.txtSched.TabIndex = 15;
             // 
             // txtRequest
             // 
-            this.txtRequest.Location = new System.Drawing.Point(743, 68);
-            this.txtRequest.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtRequest.Location = new System.Drawing.Point(650, 51);
             this.txtRequest.Multiline = true;
             this.txtRequest.Name = "txtRequest";
-            this.txtRequest.Size = new System.Drawing.Size(212, 33);
+            this.txtRequest.Size = new System.Drawing.Size(186, 26);
             this.txtRequest.TabIndex = 14;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(594, 227);
+            this.label13.Location = new System.Drawing.Point(520, 170);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(110, 22);
+            this.label13.Size = new System.Drawing.Size(84, 18);
             this.label13.TabIndex = 13;
             this.label13.Text = "Date/Time:";
             // 
@@ -164,9 +158,9 @@ namespace DigiServe
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(594, 152);
+            this.label12.Location = new System.Drawing.Point(520, 114);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(151, 22);
+            this.label12.Size = new System.Drawing.Size(115, 18);
             this.label12.TabIndex = 12;
             this.label12.Text = "Sched/Pick Up:";
             // 
@@ -174,55 +168,51 @@ namespace DigiServe
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(594, 79);
+            this.label11.Location = new System.Drawing.Point(520, 59);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(93, 22);
+            this.label11.Size = new System.Drawing.Size(72, 18);
             this.label11.TabIndex = 11;
             this.label11.Text = "Request:";
             // 
             // txtMobileNumber
             // 
-            this.txtMobileNumber.Location = new System.Drawing.Point(178, 288);
-            this.txtMobileNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtMobileNumber.Location = new System.Drawing.Point(156, 216);
             this.txtMobileNumber.Multiline = true;
             this.txtMobileNumber.Name = "txtMobileNumber";
-            this.txtMobileNumber.Size = new System.Drawing.Size(241, 33);
+            this.txtMobileNumber.Size = new System.Drawing.Size(211, 26);
             this.txtMobileNumber.TabIndex = 8;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(178, 216);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEmail.Location = new System.Drawing.Point(156, 162);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(241, 33);
+            this.txtEmail.Size = new System.Drawing.Size(211, 26);
             this.txtEmail.TabIndex = 7;
             // 
             // txtLname
             // 
-            this.txtLname.Location = new System.Drawing.Point(178, 141);
-            this.txtLname.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtLname.Location = new System.Drawing.Point(156, 106);
             this.txtLname.Multiline = true;
             this.txtLname.Name = "txtLname";
-            this.txtLname.Size = new System.Drawing.Size(241, 33);
+            this.txtLname.Size = new System.Drawing.Size(211, 26);
             this.txtLname.TabIndex = 6;
             // 
             // txtFname
             // 
-            this.txtFname.Location = new System.Drawing.Point(178, 68);
-            this.txtFname.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFname.Location = new System.Drawing.Point(156, 51);
             this.txtFname.Multiline = true;
             this.txtFname.Name = "txtFname";
-            this.txtFname.Size = new System.Drawing.Size(241, 33);
+            this.txtFname.Size = new System.Drawing.Size(211, 26);
             this.txtFname.TabIndex = 5;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(57, 376);
+            this.label10.Location = new System.Drawing.Point(50, 282);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(86, 22);
+            this.label10.Size = new System.Drawing.Size(66, 18);
             this.label10.TabIndex = 4;
             this.label10.Text = "Gender:";
             // 
@@ -230,9 +220,9 @@ namespace DigiServe
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(56, 299);
+            this.label9.Location = new System.Drawing.Point(49, 224);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(109, 22);
+            this.label9.Size = new System.Drawing.Size(84, 18);
             this.label9.TabIndex = 3;
             this.label9.Text = "Mobile No:";
             // 
@@ -240,9 +230,9 @@ namespace DigiServe
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(57, 227);
+            this.label8.Location = new System.Drawing.Point(50, 170);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 22);
+            this.label8.Size = new System.Drawing.Size(50, 18);
             this.label8.TabIndex = 2;
             this.label8.Text = "Email:";
             // 
@@ -250,9 +240,9 @@ namespace DigiServe
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(54, 152);
+            this.label7.Location = new System.Drawing.Point(47, 114);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 22);
+            this.label7.Size = new System.Drawing.Size(86, 18);
             this.label7.TabIndex = 1;
             this.label7.Text = "Last Name:";
             // 
@@ -260,19 +250,18 @@ namespace DigiServe
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(56, 79);
+            this.label6.Location = new System.Drawing.Point(49, 59);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 22);
+            this.label6.Size = new System.Drawing.Size(88, 18);
             this.label6.TabIndex = 0;
             this.label6.Text = "First Name:";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DigiServe.Properties.Resources.Screen_Shot_2021_11_24_at_11_32_24_AM;
-            this.pictureBox2.Location = new System.Drawing.Point(264, 40);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(231, 30);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(953, 156);
+            this.pictureBox2.Size = new System.Drawing.Size(834, 117);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -284,9 +273,9 @@ namespace DigiServe
             this.lblAboutDigi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblAboutDigi.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAboutDigi.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblAboutDigi.Location = new System.Drawing.Point(301, 100);
+            this.lblAboutDigi.Location = new System.Drawing.Point(263, 75);
             this.lblAboutDigi.Name = "lblAboutDigi";
-            this.lblAboutDigi.Size = new System.Drawing.Size(201, 28);
+            this.lblAboutDigi.Size = new System.Drawing.Size(159, 22);
             this.lblAboutDigi.TabIndex = 3;
             this.lblAboutDigi.Text = "About DigiServe";
             this.lblAboutDigi.Click += new System.EventHandler(this.lblAboutDigi_Click);
@@ -300,9 +289,9 @@ namespace DigiServe
             this.lblServices.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblServices.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblServices.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblServices.Location = new System.Drawing.Point(513, 100);
+            this.lblServices.Location = new System.Drawing.Point(449, 75);
             this.lblServices.Name = "lblServices";
-            this.lblServices.Size = new System.Drawing.Size(114, 28);
+            this.lblServices.Size = new System.Drawing.Size(89, 22);
             this.lblServices.TabIndex = 4;
             this.lblServices.Text = "Services";
             this.lblServices.Click += new System.EventHandler(this.lblServices_Click);
@@ -316,9 +305,9 @@ namespace DigiServe
             this.lblReservation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblReservation.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblReservation.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblReservation.Location = new System.Drawing.Point(643, 100);
+            this.lblReservation.Location = new System.Drawing.Point(563, 75);
             this.lblReservation.Name = "lblReservation";
-            this.lblReservation.Size = new System.Drawing.Size(151, 28);
+            this.lblReservation.Size = new System.Drawing.Size(119, 22);
             this.lblReservation.TabIndex = 5;
             this.lblReservation.Text = "Reservation";
             this.lblReservation.Click += new System.EventHandler(this.lblReservation_Click);
@@ -329,16 +318,16 @@ namespace DigiServe
             // 
             this.lblRecord.Location = new System.Drawing.Point(0, 0);
             this.lblRecord.Name = "lblRecord";
-            this.lblRecord.Size = new System.Drawing.Size(114, 31);
+            this.lblRecord.Size = new System.Drawing.Size(100, 23);
             this.lblRecord.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(440, 267);
+            this.label5.Location = new System.Drawing.Point(385, 200);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(421, 28);
+            this.label5.Size = new System.Drawing.Size(333, 22);
             this.label5.TabIndex = 7;
             this.label5.Text = "Reservation for tuition fee payment ";
             // 
@@ -349,9 +338,9 @@ namespace DigiServe
             this.lblRecords.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblRecords.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblRecords.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblRecords.Location = new System.Drawing.Point(822, 102);
+            this.lblRecords.Location = new System.Drawing.Point(719, 76);
             this.lblRecords.Name = "lblRecords";
-            this.lblRecords.Size = new System.Drawing.Size(110, 28);
+            this.lblRecords.Size = new System.Drawing.Size(87, 22);
             this.lblRecords.TabIndex = 9;
             this.lblRecords.Text = "Records";
             this.lblRecords.Click += new System.EventHandler(this.lblRecords_Click);
@@ -360,10 +349,10 @@ namespace DigiServe
             // 
             // ApplyFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(206)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(1189, 869);
+            this.ClientSize = new System.Drawing.Size(1040, 652);
             this.Controls.Add(this.lblRecords);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblRecord);
@@ -373,7 +362,7 @@ namespace DigiServe
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ApplyFrm";
             this.Text = "Apply";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
