@@ -74,9 +74,9 @@ namespace DigiServe
             this.lblServices1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblServices1.Location = new System.Drawing.Point(298, 68);
             this.lblServices1.Name = "lblServices1";
-            this.lblServices1.Size = new System.Drawing.Size(483, 39);
+            this.lblServices1.Size = new System.Drawing.Size(465, 39);
             this.lblServices1.TabIndex = 3;
-            this.lblServices1.Text = "Services DigiServe Provides";
+            this.lblServices1.Text = "Services DigiServe Provide";
             // 
             // Services_Frm
             // 
