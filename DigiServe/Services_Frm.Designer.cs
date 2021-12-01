@@ -30,98 +30,101 @@ namespace DigiServe
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Services_Frm));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblServices1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Yes_btn = new System.Windows.Forms.Button();
+            this.no_btn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(10, 109);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(784, 302);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
-            this.panel2.Location = new System.Drawing.Point(12, 18);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(754, 268);
-            this.panel2.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(206)))), ((int)(((byte)(79)))));
-            this.pictureBox1.Image = global::DigiServe.Properties.Resources.Screen_Shot_2021_11_24_at_11_32_24_AM;
-            this.pictureBox1.Location = new System.Drawing.Point(147, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(646, 77);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::DigiServe.Properties.Resources.design1;
-            this.pictureBox2.Location = new System.Drawing.Point(10, 9);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(133, 95);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
             // 
             // lblServices1
             // 
             this.lblServices1.AutoSize = true;
             this.lblServices1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
-            this.lblServices1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblServices1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblServices1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblServices1.Location = new System.Drawing.Point(259, 35);
+            this.lblServices1.Location = new System.Drawing.Point(23, 15);
             this.lblServices1.Name = "lblServices1";
-            this.lblServices1.Size = new System.Drawing.Size(372, 32);
+            this.lblServices1.Size = new System.Drawing.Size(337, 23);
             this.lblServices1.TabIndex = 3;
-            this.lblServices1.Text = "Services DigiServe Provide";
+            this.lblServices1.Text = "Are you sure you want to log out ?";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
+            this.panel2.Controls.Add(this.Yes_btn);
+            this.panel2.Controls.Add(this.no_btn);
+            this.panel2.Controls.Add(this.lblServices1);
+            this.panel2.Location = new System.Drawing.Point(14, 21);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(395, 171);
+            this.panel2.TabIndex = 1;
+            // 
+            // Yes_btn
+            // 
+            this.Yes_btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Yes_btn.ForeColor = System.Drawing.Color.White;
+            this.Yes_btn.Location = new System.Drawing.Point(46, 106);
+            this.Yes_btn.Name = "Yes_btn";
+            this.Yes_btn.Size = new System.Drawing.Size(94, 29);
+            this.Yes_btn.TabIndex = 6;
+            this.Yes_btn.Text = "Yes";
+            this.Yes_btn.UseVisualStyleBackColor = true;
+            this.Yes_btn.Click += new System.EventHandler(this.Yes_btn_Click);
+            this.Yes_btn.MouseLeave += new System.EventHandler(this.Yes_btn_MouseLeave);
+            this.Yes_btn.MouseHover += new System.EventHandler(this.Yes_btn_MouseHover);
+            // 
+            // no_btn
+            // 
+            this.no_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.no_btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.no_btn.ForeColor = System.Drawing.Color.White;
+            this.no_btn.Location = new System.Drawing.Point(256, 106);
+            this.no_btn.Name = "no_btn";
+            this.no_btn.Size = new System.Drawing.Size(94, 29);
+            this.no_btn.TabIndex = 5;
+            this.no_btn.Text = "No";
+            this.no_btn.UseVisualStyleBackColor = true;
+            this.no_btn.Click += new System.EventHandler(this.no_btn_Click);
+            this.no_btn.MouseLeave += new System.EventHandler(this.no_btn_MouseLeave);
+            this.no_btn.MouseHover += new System.EventHandler(this.no_btn_MouseHover);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(11, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(424, 211);
+            this.panel1.TabIndex = 0;
             // 
             // Services_Frm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(206)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(805, 417);
-            this.Controls.Add(this.lblServices1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(449, 238);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Services_Frm";
-            this.Text = "Services";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Log out";
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblServices1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button no_btn;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button Yes_btn;
     }
 }
