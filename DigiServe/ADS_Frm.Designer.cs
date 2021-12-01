@@ -33,10 +33,12 @@ namespace DigiServe
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -49,21 +51,31 @@ namespace DigiServe
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
-            this.panel1.Location = new System.Drawing.Point(10, 116);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(11, 155);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(741, 250);
+            this.panel1.Size = new System.Drawing.Size(847, 333);
             this.panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.label2.Location = new System.Drawing.Point(12, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(818, 281);
+            this.label2.TabIndex = 0;
+            this.label2.Text = resources.GetString("label2.Text");
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(206)))), ((int)(((byte)(79)))));
             this.pictureBox1.BackgroundImage = global::DigiServe.Properties.Resources.design1;
             this.pictureBox1.Image = global::DigiServe.Properties.Resources.DigiServe2;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(122, 101);
+            this.pictureBox1.Size = new System.Drawing.Size(139, 135);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -74,38 +86,39 @@ namespace DigiServe
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(192, 47);
+            this.label1.Location = new System.Drawing.Point(219, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(452, 37);
+            this.label1.Size = new System.Drawing.Size(568, 46);
             this.label1.TabIndex = 2;
             this.label1.Text = "Know About DigiServe More";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DigiServe.Properties.Resources.Screen_Shot_2021_11_24_at_11_32_24_AM;
-            this.pictureBox2.Location = new System.Drawing.Point(138, 23);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(158, 31);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(613, 87);
+            this.pictureBox2.Size = new System.Drawing.Size(701, 116);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
             // ADS_Frm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(206)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(762, 376);
+            this.ClientSize = new System.Drawing.Size(871, 501);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "ADS_Frm";
             this.Text = "About DigiServe";
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -121,5 +134,6 @@ namespace DigiServe
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
     }
 }
