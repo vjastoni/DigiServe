@@ -29,14 +29,15 @@ namespace DigiServe
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Records));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridViewRecords = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnEdit = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.dataGridViewRecords = new System.Windows.Forms.DataGridView();
+            this.btnEdit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -72,6 +73,15 @@ namespace DigiServe
             this.panel1.Size = new System.Drawing.Size(933, 436);
             this.panel1.TabIndex = 2;
             // 
+            // dataGridViewRecords
+            // 
+            this.dataGridViewRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewRecords.Location = new System.Drawing.Point(16, 18);
+            this.dataGridViewRecords.Name = "dataGridViewRecords";
+            this.dataGridViewRecords.RowTemplate.Height = 25;
+            this.dataGridViewRecords.Size = new System.Drawing.Size(900, 402);
+            this.dataGridViewRecords.TabIndex = 0;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -83,22 +93,11 @@ namespace DigiServe
             this.label1.TabIndex = 3;
             this.label1.Text = "Records";
             // 
-            // btnEdit
-            // 
-            this.btnEdit.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnEdit.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEdit.Location = new System.Drawing.Point(558, 678);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(107, 31);
-            this.btnEdit.TabIndex = 4;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = false;
-            // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.Gold;
             this.btnUpdate.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUpdate.Location = new System.Drawing.Point(689, 678);
+            this.btnUpdate.Location = new System.Drawing.Point(745, 675);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(106, 31);
             this.btnUpdate.TabIndex = 5;
@@ -109,21 +108,23 @@ namespace DigiServe
             // 
             this.btnDelete.BackColor = System.Drawing.Color.Red;
             this.btnDelete.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelete.Location = new System.Drawing.Point(828, 678);
+            this.btnDelete.Location = new System.Drawing.Point(876, 675);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(108, 31);
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
             // 
-            // dataGridViewRecords
+            // btnEdit
             // 
-            this.dataGridViewRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewRecords.Location = new System.Drawing.Point(16, 31);
-            this.dataGridViewRecords.Name = "dataGridViewRecords";
-            this.dataGridViewRecords.RowTemplate.Height = 25;
-            this.dataGridViewRecords.Size = new System.Drawing.Size(900, 381);
-            this.dataGridViewRecords.TabIndex = 0;
+            this.btnEdit.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnEdit.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEdit.Location = new System.Drawing.Point(606, 675);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(107, 31);
+            this.btnEdit.TabIndex = 4;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = false;
             // 
             // Records
             // 
@@ -138,6 +139,7 @@ namespace DigiServe
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Records";
             this.Text = "Records";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -156,8 +158,8 @@ namespace DigiServe
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridViewRecords;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnEdit;
     }
 }

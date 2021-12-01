@@ -17,7 +17,7 @@ namespace DigiServe
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DigiServeFrm());
+            Application.Run(new ApplyFrm());
         }
     }
 }

@@ -57,7 +57,7 @@ namespace DigiServe
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Gold;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(206)))), ((int)(((byte)(79)))));
             this.pictureBox1.BackgroundImage = global::DigiServe.Properties.Resources.design1;
             this.pictureBox1.Image = global::DigiServe.Properties.Resources.DigiServe2;
             this.pictureBox1.Location = new System.Drawing.Point(10, 9);
@@ -95,7 +95,7 @@ namespace DigiServe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gold;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(206)))), ((int)(((byte)(79)))));
             this.ClientSize = new System.Drawing.Size(762, 376);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);

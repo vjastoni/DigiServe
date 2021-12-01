@@ -73,6 +73,26 @@ namespace DigiServe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap design11 {
+            get {
+                object obj = ResourceManager.GetObject("design11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Design2 {
+            get {
+                object obj = ResourceManager.GetObject("Design2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DigiServe {
             get {
                 object obj = ResourceManager.GetObject("DigiServe", resourceCulture);
