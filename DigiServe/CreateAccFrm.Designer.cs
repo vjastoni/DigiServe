@@ -303,6 +303,7 @@ namespace DigiServe
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1168, 772);
             this.Name = "CreateAccFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create Account";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
