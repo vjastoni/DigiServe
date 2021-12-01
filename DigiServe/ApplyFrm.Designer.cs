@@ -103,6 +103,7 @@ namespace DigiServe
             // btnSubmit
             // 
             this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(206)))), ((int)(((byte)(79)))));
+            this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubmit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSubmit.Location = new System.Drawing.Point(757, 368);
             this.btnSubmit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
