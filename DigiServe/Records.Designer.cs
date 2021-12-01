@@ -57,7 +57,7 @@ namespace DigiServe
             this.pictureBox2.Image = global::DigiServe.Properties.Resources.Screen_Shot_2021_11_23_at_2_252;
             this.pictureBox2.Location = new System.Drawing.Point(255, 27);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(786, 108);
+            this.pictureBox2.Size = new System.Drawing.Size(1044, 108);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -68,16 +68,16 @@ namespace DigiServe
             this.panel1.Controls.Add(this.dataGridViewRecords);
             this.panel1.Location = new System.Drawing.Point(51, 219);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(933, 436);
+            this.panel1.Size = new System.Drawing.Size(1235, 436);
             this.panel1.TabIndex = 2;
             // 
             // dataGridViewRecords
             // 
             this.dataGridViewRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewRecords.Location = new System.Drawing.Point(16, 18);
+            this.dataGridViewRecords.Location = new System.Drawing.Point(17, 17);
             this.dataGridViewRecords.Name = "dataGridViewRecords";
             this.dataGridViewRecords.RowTemplate.Height = 25;
-            this.dataGridViewRecords.Size = new System.Drawing.Size(900, 402);
+            this.dataGridViewRecords.Size = new System.Drawing.Size(1199, 402);
             this.dataGridViewRecords.TabIndex = 0;
             // 
             // label1
@@ -85,7 +85,7 @@ namespace DigiServe
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.label1.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(583, 61);
+            this.label1.Location = new System.Drawing.Point(730, 58);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(131, 34);
             this.label1.TabIndex = 3;
@@ -95,7 +95,7 @@ namespace DigiServe
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.Gold;
             this.btnUpdate.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUpdate.Location = new System.Drawing.Point(861, 677);
+            this.btnUpdate.Location = new System.Drawing.Point(1180, 664);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(106, 31);
             this.btnUpdate.TabIndex = 5;
@@ -108,7 +108,7 @@ namespace DigiServe
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(206)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(1020, 749);
+            this.ClientSize = new System.Drawing.Size(1311, 707);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);

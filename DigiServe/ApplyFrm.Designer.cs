@@ -128,8 +128,11 @@ namespace DigiServe
             // 
             this.cbTime.FormattingEnabled = true;
             this.cbTime.Items.AddRange(new object[] {
-            "9 am",
-            "10 pm"});
+            "8 AM - 9 AM",
+            "10 AM - 11 AM",
+            "1 PM - 2 PM",
+            "3 PM - 4 PM",
+            ""});
             this.cbTime.Location = new System.Drawing.Point(638, 147);
             this.cbTime.Name = "cbTime";
             this.cbTime.Size = new System.Drawing.Size(202, 23);
@@ -141,7 +144,8 @@ namespace DigiServe
             this.cbProfessor.Items.AddRange(new object[] {
             "MR. A",
             "MS. B",
-            "MS. C"});
+            "MS. C",
+            "MR. D"});
             this.cbProfessor.Location = new System.Drawing.Point(280, 276);
             this.cbProfessor.Name = "cbProfessor";
             this.cbProfessor.Size = new System.Drawing.Size(202, 23);
@@ -151,9 +155,14 @@ namespace DigiServe
             // 
             this.cbSubject.FormattingEnabled = true;
             this.cbSubject.Items.AddRange(new object[] {
-            "MATH",
-            "ENGLISH",
-            "SCIENCE"});
+            "Introduction to Computing",
+            "Computer Programming",
+            "Euthenics ",
+            "Physical Eduation",
+            "Art Appreciation",
+            "Ethics",
+            "Network Technology",
+            "Capstone"});
             this.cbSubject.Location = new System.Drawing.Point(280, 208);
             this.cbSubject.Name = "cbSubject";
             this.cbSubject.Size = new System.Drawing.Size(202, 23);
@@ -163,9 +172,12 @@ namespace DigiServe
             // 
             this.cdCourse.FormattingEnabled = true;
             this.cdCourse.Items.AddRange(new object[] {
-            "BSIT",
-            "BSCS",
-            "BSTM"});
+            "Bachelor of Science in Information Technology (BSIT)",
+            "Bachelor of Science in Computer Engineering (BSCpE)",
+            "Bachelor of Science in Business Administration (BSBA)",
+            "Bachelor of Science in Accounting Information System (BSAIS)",
+            "Bachelor of Arts in Communication (BACOMM)",
+            "Bachelor of Science in Tourism Management (BSTM)"});
             this.cdCourse.Location = new System.Drawing.Point(280, 144);
             this.cdCourse.Name = "cdCourse";
             this.cdCourse.Size = new System.Drawing.Size(202, 23);
@@ -175,9 +187,7 @@ namespace DigiServe
             // 
             this.cbDepartment.FormattingEnabled = true;
             this.cbDepartment.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C"});
+            "IT Department"});
             this.cbDepartment.Location = new System.Drawing.Point(280, 81);
             this.cbDepartment.Name = "cbDepartment";
             this.cbDepartment.Size = new System.Drawing.Size(202, 23);

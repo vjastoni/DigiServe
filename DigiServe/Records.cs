@@ -11,20 +11,19 @@ namespace DigiServe
 {
     public partial class Records : Form
     {
-        string conString = @"lam mo na ilalagay dito";
+        string conString = @"Data Source=DESKTOP-8HAO55D\SQLEXPRESS;Initial Catalog=DB_Appointment;Integrated Security=True";
         public Records()
         {
             InitializeComponent();
         }
-
-       
-
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+
             using (SqlConnection sqlCon = new SqlConnection(conString))
             {
+
                 sqlCon.Open();
-                SqlDataAdapter sqlData = new SqlDataAdapter("Select * from <Table Name>", sqlCon);
+                SqlDataAdapter sqlData = new SqlDataAdapter("Select * from Appointment", sqlCon);
                 DataTable dataTable = new DataTable();
                 sqlData.Fill(dataTable);
                 dataGridViewRecords.DataSource = dataTable;

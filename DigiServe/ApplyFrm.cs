@@ -187,13 +187,14 @@ namespace DigiServe
            ,[Professor]
            ,[Date]
            ,[Time]
-           ,[MobileNo])
+           ,[MobileNo]
+           ,[Ticket])
      VALUES
-           ('"+cbDepartment.SelectedItem.ToString()+ "', '" + cdCourse.SelectedItem.ToString() + "', '" + cbSubject.SelectedItem.ToString() + "', '" + cbProfessor.SelectedItem.ToString() + "', '" + DatePicker.Value.ToShortDateString() + "', '" + cbTime.SelectedItem.ToString() + "', '" + txtMobileNo.Text + "')", con);
+           ('" + cbDepartment.SelectedItem.ToString()+ "', '" + cdCourse.SelectedItem.ToString() + "', '" + cbSubject.SelectedItem.ToString() + "', '" + cbProfessor.SelectedItem.ToString() + "', '" + DatePicker.Value.ToShortDateString() + "', '" + cbTime.SelectedItem.ToString() + "', '" + txtMobileNo.Text + "','"+ticket+"')", con);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("Submitted Successfully!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Submitted Successfully!" + "\nYour Ticket is: " + ticket, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
