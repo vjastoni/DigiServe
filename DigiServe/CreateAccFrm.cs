@@ -42,5 +42,19 @@ namespace DigiServe
             con.Close();
             MessageBox.Show("Register Successfully!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void label10_MouseHover(object sender, EventArgs e)
+        {
+            // put underline in sign up
+            label10.Font = new Font(label10.Font.Name, label10.Font.SizeInPoints, FontStyle.Underline);
+            label10.ForeColor = Color.Gold;
+        }
+
+        private void label10_MouseLeave(object sender, EventArgs e)
+        {
+            // changes the font to its default font 
+            label10.Font = new Font(label10.Font.Name, label10.Font.SizeInPoints, FontStyle.Bold);
+            label10.ForeColor = SystemColors.ControlLightLight;
+        }
     }
 }
