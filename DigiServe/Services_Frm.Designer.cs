@@ -109,6 +109,7 @@ namespace DigiServe
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(467, 285);
             this.MinimizeBox = false;
             this.Name = "Services_Frm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
