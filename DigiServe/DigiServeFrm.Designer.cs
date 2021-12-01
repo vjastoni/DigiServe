@@ -130,7 +130,7 @@ namespace DigiServe
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(217, 137);
+            this.txtPassword.Location = new System.Drawing.Point(230, 142);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '●';
@@ -149,7 +149,7 @@ namespace DigiServe
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(217, 67);
+            this.txtUsername.Location = new System.Drawing.Point(230, 71);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(226, 27);
@@ -205,7 +205,7 @@ namespace DigiServe
             this.pictureBox3.Location = new System.Drawing.Point(295, 37);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(866, 180);
+            this.pictureBox3.Size = new System.Drawing.Size(829, 180);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 14;
             this.pictureBox3.TabStop = false;
@@ -223,7 +223,10 @@ namespace DigiServe
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1154, 819);
             this.Name = "DigiServeFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DigiServe";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
