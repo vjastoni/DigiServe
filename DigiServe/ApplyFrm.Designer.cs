@@ -66,9 +66,10 @@ namespace DigiServe
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DigiServe.Properties.Resources.DigiServe1;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 26);
+            this.pictureBox1.Location = new System.Drawing.Point(27, 35);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 164);
+            this.pictureBox1.Size = new System.Drawing.Size(190, 201);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -93,18 +94,20 @@ namespace DigiServe
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Location = new System.Drawing.Point(43, 236);
+            this.panel1.Location = new System.Drawing.Point(49, 286);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(947, 377);
+            this.panel1.Size = new System.Drawing.Size(1082, 503);
             this.panel1.TabIndex = 1;
             // 
             // btnSubmit
             // 
             this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(206)))), ((int)(((byte)(79)))));
             this.btnSubmit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSubmit.Location = new System.Drawing.Point(662, 276);
+            this.btnSubmit.Location = new System.Drawing.Point(757, 368);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(155, 40);
+            this.btnSubmit.Size = new System.Drawing.Size(177, 53);
             this.btnSubmit.TabIndex = 14;
             this.btnSubmit.Text = "&Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
@@ -112,16 +115,18 @@ namespace DigiServe
             // 
             // txtMobileNo
             // 
-            this.txtMobileNo.Location = new System.Drawing.Point(640, 206);
+            this.txtMobileNo.Location = new System.Drawing.Point(744, 283);
+            this.txtMobileNo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMobileNo.Name = "txtMobileNo";
-            this.txtMobileNo.Size = new System.Drawing.Size(200, 23);
+            this.txtMobileNo.Size = new System.Drawing.Size(228, 27);
             this.txtMobileNo.TabIndex = 13;
             // 
             // DatePicker
             // 
-            this.DatePicker.Location = new System.Drawing.Point(638, 78);
+            this.DatePicker.Location = new System.Drawing.Point(744, 106);
+            this.DatePicker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DatePicker.Name = "DatePicker";
-            this.DatePicker.Size = new System.Drawing.Size(200, 23);
+            this.DatePicker.Size = new System.Drawing.Size(228, 27);
             this.DatePicker.TabIndex = 12;
             // 
             // cbTime
@@ -133,9 +138,10 @@ namespace DigiServe
             "1 PM - 2 PM",
             "3 PM - 4 PM",
             ""});
-            this.cbTime.Location = new System.Drawing.Point(638, 147);
+            this.cbTime.Location = new System.Drawing.Point(744, 196);
+            this.cbTime.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbTime.Name = "cbTime";
-            this.cbTime.Size = new System.Drawing.Size(202, 23);
+            this.cbTime.Size = new System.Drawing.Size(230, 28);
             this.cbTime.TabIndex = 11;
             // 
             // cbProfessor
@@ -146,9 +152,10 @@ namespace DigiServe
             "MS. B",
             "MS. C",
             "MR. D"});
-            this.cbProfessor.Location = new System.Drawing.Point(280, 276);
+            this.cbProfessor.Location = new System.Drawing.Point(320, 368);
+            this.cbProfessor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbProfessor.Name = "cbProfessor";
-            this.cbProfessor.Size = new System.Drawing.Size(202, 23);
+            this.cbProfessor.Size = new System.Drawing.Size(230, 28);
             this.cbProfessor.TabIndex = 10;
             // 
             // cbSubject
@@ -163,9 +170,10 @@ namespace DigiServe
             "Ethics",
             "Network Technology",
             "Capstone"});
-            this.cbSubject.Location = new System.Drawing.Point(280, 208);
+            this.cbSubject.Location = new System.Drawing.Point(320, 277);
+            this.cbSubject.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbSubject.Name = "cbSubject";
-            this.cbSubject.Size = new System.Drawing.Size(202, 23);
+            this.cbSubject.Size = new System.Drawing.Size(230, 28);
             this.cbSubject.TabIndex = 9;
             // 
             // cdCourse
@@ -178,9 +186,10 @@ namespace DigiServe
             "Bachelor of Science in Accounting Information System (BSAIS)",
             "Bachelor of Arts in Communication (BACOMM)",
             "Bachelor of Science in Tourism Management (BSTM)"});
-            this.cdCourse.Location = new System.Drawing.Point(280, 144);
+            this.cdCourse.Location = new System.Drawing.Point(320, 192);
+            this.cdCourse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cdCourse.Name = "cdCourse";
-            this.cdCourse.Size = new System.Drawing.Size(202, 23);
+            this.cdCourse.Size = new System.Drawing.Size(230, 28);
             this.cdCourse.TabIndex = 8;
             // 
             // cbDepartment
@@ -188,18 +197,19 @@ namespace DigiServe
             this.cbDepartment.FormattingEnabled = true;
             this.cbDepartment.Items.AddRange(new object[] {
             "IT Department"});
-            this.cbDepartment.Location = new System.Drawing.Point(280, 81);
+            this.cbDepartment.Location = new System.Drawing.Point(320, 108);
+            this.cbDepartment.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbDepartment.Name = "cbDepartment";
-            this.cbDepartment.Size = new System.Drawing.Size(202, 23);
+            this.cbDepartment.Size = new System.Drawing.Size(230, 28);
             this.cbDepartment.TabIndex = 7;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(521, 209);
+            this.label7.Location = new System.Drawing.Point(595, 279);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(112, 22);
+            this.label7.Size = new System.Drawing.Size(143, 28);
             this.label7.TabIndex = 6;
             this.label7.Text = "Mobile No.:";
             // 
@@ -207,9 +217,9 @@ namespace DigiServe
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(521, 144);
+            this.label6.Location = new System.Drawing.Point(595, 192);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 22);
+            this.label6.Size = new System.Drawing.Size(77, 28);
             this.label6.TabIndex = 5;
             this.label6.Text = "Time:";
             // 
@@ -217,9 +227,9 @@ namespace DigiServe
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(521, 82);
+            this.label5.Location = new System.Drawing.Point(595, 109);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 22);
+            this.label5.Size = new System.Drawing.Size(74, 28);
             this.label5.TabIndex = 4;
             this.label5.Text = "Date:";
             // 
@@ -227,9 +237,9 @@ namespace DigiServe
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(149, 277);
+            this.label4.Location = new System.Drawing.Point(147, 364);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 22);
+            this.label4.Size = new System.Drawing.Size(134, 28);
             this.label4.TabIndex = 3;
             this.label4.Text = "Professor:";
             // 
@@ -237,9 +247,9 @@ namespace DigiServe
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(149, 208);
+            this.label3.Location = new System.Drawing.Point(147, 273);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 22);
+            this.label3.Size = new System.Drawing.Size(108, 28);
             this.label3.TabIndex = 2;
             this.label3.Text = "Subject:";
             // 
@@ -247,9 +257,9 @@ namespace DigiServe
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(149, 144);
+            this.label2.Location = new System.Drawing.Point(147, 192);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 22);
+            this.label2.Size = new System.Drawing.Size(104, 28);
             this.label2.TabIndex = 1;
             this.label2.Text = "Course:";
             // 
@@ -257,18 +267,19 @@ namespace DigiServe
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(149, 82);
+            this.label1.Location = new System.Drawing.Point(147, 108);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 22);
+            this.label1.Size = new System.Drawing.Size(157, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Department:";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::DigiServe.Properties.Resources.design11;
-            this.pictureBox3.Location = new System.Drawing.Point(603, 107);
+            this.pictureBox3.Location = new System.Drawing.Point(689, 143);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(436, 315);
+            this.pictureBox3.Size = new System.Drawing.Size(498, 420);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
@@ -276,9 +287,10 @@ namespace DigiServe
             // pictureBox4
             // 
             this.pictureBox4.Image = global::DigiServe.Properties.Resources.Design2;
-            this.pictureBox4.Location = new System.Drawing.Point(-9, -17);
+            this.pictureBox4.Location = new System.Drawing.Point(-10, -23);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(174, 141);
+            this.pictureBox4.Size = new System.Drawing.Size(199, 188);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
@@ -286,9 +298,10 @@ namespace DigiServe
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DigiServe.Properties.Resources.Screen_Shot_2021_11_24_at_11_32_24_AM;
-            this.pictureBox2.Location = new System.Drawing.Point(231, 30);
+            this.pictureBox2.Location = new System.Drawing.Point(233, 54);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(834, 117);
+            this.pictureBox2.Size = new System.Drawing.Size(913, 156);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -300,9 +313,9 @@ namespace DigiServe
             this.lblAboutDigi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblAboutDigi.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAboutDigi.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblAboutDigi.Location = new System.Drawing.Point(831, 76);
+            this.lblAboutDigi.Location = new System.Drawing.Point(661, 110);
             this.lblAboutDigi.Name = "lblAboutDigi";
-            this.lblAboutDigi.Size = new System.Drawing.Size(159, 22);
+            this.lblAboutDigi.Size = new System.Drawing.Size(201, 28);
             this.lblAboutDigi.TabIndex = 3;
             this.lblAboutDigi.Text = "About DigiServe";
             this.lblAboutDigi.Click += new System.EventHandler(this.lblAboutDigi_Click);
@@ -316,11 +329,11 @@ namespace DigiServe
             this.lblServices.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblServices.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblServices.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblServices.Location = new System.Drawing.Point(475, 76);
+            this.lblServices.Location = new System.Drawing.Point(924, 110);
             this.lblServices.Name = "lblServices";
-            this.lblServices.Size = new System.Drawing.Size(89, 22);
+            this.lblServices.Size = new System.Drawing.Size(97, 28);
             this.lblServices.TabIndex = 4;
-            this.lblServices.Text = "Services";
+            this.lblServices.Text = "Log out";
             this.lblServices.Click += new System.EventHandler(this.lblServices_Click);
             this.lblServices.MouseLeave += new System.EventHandler(this.lblServices_MouseLeave);
             this.lblServices.MouseHover += new System.EventHandler(this.lblServices_MouseHover);
@@ -332,9 +345,9 @@ namespace DigiServe
             this.lblReservation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblReservation.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblReservation.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblReservation.Location = new System.Drawing.Point(280, 76);
+            this.lblReservation.Location = new System.Drawing.Point(289, 110);
             this.lblReservation.Name = "lblReservation";
-            this.lblReservation.Size = new System.Drawing.Size(119, 22);
+            this.lblReservation.Size = new System.Drawing.Size(151, 28);
             this.lblReservation.TabIndex = 5;
             this.lblReservation.Text = "Reservation";
             this.lblReservation.Click += new System.EventHandler(this.lblReservation_Click);
@@ -343,9 +356,9 @@ namespace DigiServe
             // 
             // lblRecord
             // 
-            this.lblRecord.Location = new System.Drawing.Point(-4, 0);
+            this.lblRecord.Location = new System.Drawing.Point(-5, 0);
             this.lblRecord.Name = "lblRecord";
-            this.lblRecord.Size = new System.Drawing.Size(100, 23);
+            this.lblRecord.Size = new System.Drawing.Size(114, 31);
             this.lblRecord.TabIndex = 8;
             // 
             // lblRecords
@@ -355,9 +368,9 @@ namespace DigiServe
             this.lblRecords.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblRecords.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblRecords.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblRecords.Location = new System.Drawing.Point(667, 76);
+            this.lblRecords.Location = new System.Drawing.Point(489, 110);
             this.lblRecords.Name = "lblRecords";
-            this.lblRecords.Size = new System.Drawing.Size(87, 22);
+            this.lblRecords.Size = new System.Drawing.Size(110, 28);
             this.lblRecords.TabIndex = 9;
             this.lblRecords.Text = "Records";
             this.lblRecords.Click += new System.EventHandler(this.lblRecords_Click);
@@ -367,17 +380,19 @@ namespace DigiServe
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel2.Location = new System.Drawing.Point(24, 219);
+            this.panel2.Location = new System.Drawing.Point(27, 263);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(979, 421);
+            this.panel2.Size = new System.Drawing.Size(1119, 561);
             this.panel2.TabIndex = 10;
             // 
             // ApplyFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(206)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(1040, 652);
+            this.ClientSize = new System.Drawing.Size(1189, 839);
             this.Controls.Add(this.lblRecords);
             this.Controls.Add(this.lblRecord);
             this.Controls.Add(this.lblReservation);
@@ -388,7 +403,11 @@ namespace DigiServe
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1207, 886);
             this.Name = "ApplyFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Apply";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);

@@ -16,7 +16,7 @@ namespace DigiServe
         {
             InitializeComponent();
         }
-      
+        
 
         private void lblAboutDigi_Click(object sender, EventArgs e)
         {
@@ -29,7 +29,7 @@ namespace DigiServe
 
         private void lblServices_Click(object sender, EventArgs e)
         {
-            // open Services form
+            // open Services form // Logout Label
             Services_Frm serv = new Services_Frm();
             serv.ShowDialog();
         }
@@ -37,6 +37,7 @@ namespace DigiServe
         private void lblReservation_Click(object sender, EventArgs e)
         {
             
+            MessageBox.Show("You are already in the Reservation menu");
         }
 
         private void lblRecords_Click(object sender, EventArgs e)
