@@ -125,7 +125,24 @@ namespace DigiServe
             lblRecords.Font = new Font(lblRecords.Font.Name, downSizeR, lblRecords.Font.Style, lblRecords.Font.Unit);
             lblRecords.ForeColor = SystemColors.ControlLightLight;
         }
-        
 
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-8HAO55D\SQLEXPRESS;Initial Catalog=DB_Appointment;Integrated Security=True");
+            SqlCommand cmd = new SqlCommand(@"INSERT INTO [dbo].[Appointment]
+           ([Department]
+           ,[Course]
+           ,[Subject]
+           ,[Professor]
+           ,[Date]
+           ,[Time]
+           ,[MobileNo])
+     VALUES
+           ('"+cbDepartment.SelectedItem.ToString()+ "', '" + cdCourse.SelectedItem.ToString() + "', '" + cbSubject.SelectedItem.ToString() + "', '" + cbProfessor.SelectedItem.ToString() + "', '" + DatePicker.Value.ToShortDateString() + "', '" + cbTime.SelectedItem.ToString() + "', '" + txtMobileNo.Text + "')", con);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Submitted Successfully!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

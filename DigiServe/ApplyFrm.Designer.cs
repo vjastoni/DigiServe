@@ -108,6 +108,7 @@ namespace DigiServe
             this.btnSubmit.TabIndex = 14;
             this.btnSubmit.Text = "&Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // txtMobileNo
             // 
@@ -126,6 +127,9 @@ namespace DigiServe
             // cbTime
             // 
             this.cbTime.FormattingEnabled = true;
+            this.cbTime.Items.AddRange(new object[] {
+            "9 am",
+            "10 pm"});
             this.cbTime.Location = new System.Drawing.Point(638, 147);
             this.cbTime.Name = "cbTime";
             this.cbTime.Size = new System.Drawing.Size(202, 23);
@@ -134,6 +138,10 @@ namespace DigiServe
             // cbProfessor
             // 
             this.cbProfessor.FormattingEnabled = true;
+            this.cbProfessor.Items.AddRange(new object[] {
+            "MR. A",
+            "MS. B",
+            "MS. C"});
             this.cbProfessor.Location = new System.Drawing.Point(280, 276);
             this.cbProfessor.Name = "cbProfessor";
             this.cbProfessor.Size = new System.Drawing.Size(202, 23);
@@ -142,6 +150,10 @@ namespace DigiServe
             // cbSubject
             // 
             this.cbSubject.FormattingEnabled = true;
+            this.cbSubject.Items.AddRange(new object[] {
+            "MATH",
+            "ENGLISH",
+            "SCIENCE"});
             this.cbSubject.Location = new System.Drawing.Point(280, 208);
             this.cbSubject.Name = "cbSubject";
             this.cbSubject.Size = new System.Drawing.Size(202, 23);
@@ -150,6 +162,10 @@ namespace DigiServe
             // cdCourse
             // 
             this.cdCourse.FormattingEnabled = true;
+            this.cdCourse.Items.AddRange(new object[] {
+            "BSIT",
+            "BSCS",
+            "BSTM"});
             this.cdCourse.Location = new System.Drawing.Point(280, 144);
             this.cdCourse.Name = "cdCourse";
             this.cdCourse.Size = new System.Drawing.Size(202, 23);
@@ -158,6 +174,10 @@ namespace DigiServe
             // cbDepartment
             // 
             this.cbDepartment.FormattingEnabled = true;
+            this.cbDepartment.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C"});
             this.cbDepartment.Location = new System.Drawing.Point(280, 81);
             this.cbDepartment.Name = "cbDepartment";
             this.cbDepartment.Size = new System.Drawing.Size(202, 23);
