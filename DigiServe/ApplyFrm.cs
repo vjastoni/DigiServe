@@ -126,8 +126,59 @@ namespace DigiServe
             lblRecords.ForeColor = SystemColors.ControlLightLight;
         }
 
+        public class RandomGenerator
+        {
+             
+            private readonly Random _random = new Random();
+
+               
+            public int RandomNumber(int min, int max)
+            {
+                return _random.Next(min, max);
+            }
+
+              
+            public string RandomString(int size, bool lowerCase = false)
+            {
+                var builder = new StringBuilder(size);
+
+                
+                char offset = lowerCase ? 'a' : 'A';
+                const int lettersOffset = 26; 
+
+                for (var i = 0; i < size; i++)
+                {
+                    var @char = (char)_random.Next(offset, offset + lettersOffset);
+                    builder.Append(@char);
+                }
+
+                return lowerCase ? builder.ToString().ToLower() : builder.ToString();
+            }
+
+            public string RandomTicket()
+            {
+                var ticketBuilder = new StringBuilder();
+
+
+                ticketBuilder.Append(RandomString(4, true));
+
+                  
+                ticketBuilder.Append(RandomNumber(1000, 9999));
+
+               
+                ticketBuilder.Append(RandomString(2));
+                return ticketBuilder.ToString();
+            }
+        }
+
+
+
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            RandomGenerator ticketgenerator = new RandomGenerator();
+            
+            string ticket = ticketgenerator.RandomTicket();  // Paki lagay nalng master :) lab u po <3
+
             SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-8HAO55D\SQLEXPRESS;Initial Catalog=DB_Appointment;Integrated Security=True");
             SqlCommand cmd = new SqlCommand(@"INSERT INTO [dbo].[Appointment]
            ([Department]
