@@ -117,6 +117,7 @@ namespace DigiServe
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(889, 580);
             this.Name = "ADS_Frm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "About DigiServe";
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.panel1.ResumeLayout(false);
