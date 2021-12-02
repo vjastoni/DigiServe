@@ -74,8 +74,8 @@ namespace DigiServe
 
         private void lblForgotpass_Click(object sender, EventArgs e)
         {
-            Forgot_password_frm Forgot_password = new Forgot_password_frm();
-            Forgot_password.ShowDialog();
+            EmailAddFrm Emailadd = new EmailAddFrm();
+            Emailadd.ShowDialog();
         }
     }
 }

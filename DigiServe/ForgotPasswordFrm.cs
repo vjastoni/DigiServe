@@ -39,11 +39,13 @@ namespace DigiServe
             password = CurrentPass_txtbx.Text;
             newPassword = NewPass_txtbox.Text;
 
+
             if (testpass == password)
             {
 
                 MessageBox.Show("Your password had been sucessfully changed");
                 Dispose();
+                
             }
             else if (password == "" )
             {
