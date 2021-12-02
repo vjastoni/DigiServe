@@ -54,7 +54,7 @@ namespace DigiServe
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(11, 155);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(847, 333);
+            this.panel1.Size = new System.Drawing.Size(847, 364);
             this.panel1.TabIndex = 0;
             // 
             // label2
@@ -62,9 +62,9 @@ namespace DigiServe
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label2.Location = new System.Drawing.Point(12, 18);
+            this.label2.Location = new System.Drawing.Point(14, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(818, 281);
+            this.label2.Size = new System.Drawing.Size(818, 340);
             this.label2.TabIndex = 0;
             this.label2.Text = resources.GetString("label2.Text");
             // 
@@ -108,13 +108,14 @@ namespace DigiServe
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(206)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(871, 501);
+            this.ClientSize = new System.Drawing.Size(871, 533);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(889, 580);
             this.Name = "ADS_Frm";
             this.Text = "About DigiServe";
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();

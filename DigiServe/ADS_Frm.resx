@@ -64,7 +64,13 @@
     <value>214, 17</value>
   </metadata>
   <data name="label2.Text" xml:space="preserve">
-    <value>DIGISERVE is known as appointment reservation app. The Function of the app is to allow the users to reserve the date for when they are going to pay their tuition, request for their paperworks (i.e form 137, TOR) in order to avoid the long lines and waiting for their turn. This app is proposed for any school, either private or public.</value>
+    <value>About US:
+
+* Real-Time Scheduling when the student or user reservation is made, the system can reserve the date for when they would like to consult their respective professor or department.
+
+* After reservation, a ticket number will be given to the user to use it to present on the day of their reservation at the school admin to easily find which department they have reserved.
+
+* Up to Date Information. The appointment reservation system helps connect the admin and the user through contact information provided.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
