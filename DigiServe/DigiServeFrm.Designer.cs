@@ -84,7 +84,7 @@ namespace DigiServe
             this.lblSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblSignUp.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblSignUp.ForeColor = System.Drawing.Color.White;
-            this.lblSignUp.Location = new System.Drawing.Point(330, 340);
+            this.lblSignUp.Location = new System.Drawing.Point(342, 341);
             this.lblSignUp.Name = "lblSignUp";
             this.lblSignUp.Size = new System.Drawing.Size(76, 21);
             this.lblSignUp.TabIndex = 16;
@@ -97,7 +97,7 @@ namespace DigiServe
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(150, 340);
+            this.label5.Location = new System.Drawing.Point(139, 340);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(206, 22);
             this.label5.TabIndex = 15;
