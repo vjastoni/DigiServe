@@ -14,9 +14,6 @@ namespace DigiServe
         [STAThread]
         static void Main()
         {
-
-            Application.Run(new ApplyFrm());
-
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
