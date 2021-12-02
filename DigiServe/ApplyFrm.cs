@@ -32,6 +32,8 @@ namespace DigiServe
             // open Services form // Logout Label
             Services_Frm serv = new Services_Frm();
             serv.ShowDialog();
+            ApplyFrm frm = new ApplyFrm();
+            frm.Hide();
         }
 
         private void lblReservation_Click(object sender, EventArgs e)
