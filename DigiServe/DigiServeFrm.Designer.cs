@@ -120,6 +120,7 @@ namespace DigiServe
             // lblForgotpass
             // 
             this.lblForgotpass.AutoSize = true;
+            this.lblForgotpass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblForgotpass.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblForgotpass.ForeColor = System.Drawing.Color.White;
             this.lblForgotpass.Location = new System.Drawing.Point(288, 185);
@@ -127,6 +128,9 @@ namespace DigiServe
             this.lblForgotpass.Size = new System.Drawing.Size(181, 22);
             this.lblForgotpass.TabIndex = 13;
             this.lblForgotpass.Text = "Forgot password?";
+            this.lblForgotpass.Click += new System.EventHandler(this.lblForgotpass_Click);
+            this.lblForgotpass.MouseLeave += new System.EventHandler(this.lblForgotpass_MouseLeave);
+            this.lblForgotpass.MouseHover += new System.EventHandler(this.lblForgotpass_MouseHover);
             // 
             // txtPassword
             // 

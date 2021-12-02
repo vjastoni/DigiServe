@@ -58,5 +58,24 @@ namespace DigiServe
             crtacc.Show();
             this.Hide();
         }
+
+        private void lblForgotpass_MouseHover(object sender, EventArgs e)
+        {
+            
+            lblForgotpass.ForeColor = Color.Gold;
+        }
+
+        private void lblForgotpass_MouseLeave(object sender, EventArgs e)
+        {
+            
+            lblForgotpass.ForeColor = SystemColors.ControlLightLight;
+
+        }
+
+        private void lblForgotpass_Click(object sender, EventArgs e)
+        {
+            Forgot_password_frm Forgot_password = new Forgot_password_frm();
+            Forgot_password.ShowDialog();
+        }
     }
 }
