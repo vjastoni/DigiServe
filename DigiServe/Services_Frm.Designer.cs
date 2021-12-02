@@ -65,7 +65,7 @@ namespace DigiServe
             // Yes_btn
             // 
             this.Yes_btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Yes_btn.ForeColor = System.Drawing.Color.White;
+            this.Yes_btn.ForeColor = System.Drawing.Color.Black;
             this.Yes_btn.Location = new System.Drawing.Point(46, 106);
             this.Yes_btn.Name = "Yes_btn";
             this.Yes_btn.Size = new System.Drawing.Size(94, 29);
@@ -80,7 +80,7 @@ namespace DigiServe
             // 
             this.no_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.no_btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.no_btn.ForeColor = System.Drawing.Color.White;
+            this.no_btn.ForeColor = System.Drawing.Color.Black;
             this.no_btn.Location = new System.Drawing.Point(256, 106);
             this.no_btn.Name = "no_btn";
             this.no_btn.Size = new System.Drawing.Size(94, 29);

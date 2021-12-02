@@ -29,6 +29,7 @@ namespace DigiServe
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Forgot_password_frm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.CurrentPass_txtbx = new System.Windows.Forms.TextBox();
@@ -112,6 +113,7 @@ namespace DigiServe
             this.Controls.Add(this.CurrentPass_txtbx);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(445, 265);
             this.MinimizeBox = false;

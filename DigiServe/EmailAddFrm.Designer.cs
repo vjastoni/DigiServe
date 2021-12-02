@@ -29,6 +29,7 @@ namespace DigiServe
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmailAddFrm));
             this.label1 = new System.Windows.Forms.Label();
             this.EmailAdd_txtbx = new System.Windows.Forms.TextBox();
             this.Subtmitbtn = new System.Windows.Forms.Button();
@@ -74,6 +75,7 @@ namespace DigiServe
             this.Controls.Add(this.Subtmitbtn);
             this.Controls.Add(this.EmailAdd_txtbx);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(406, 180);
             this.MinimizeBox = false;
