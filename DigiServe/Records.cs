@@ -20,7 +20,7 @@ namespace DigiServe
         {
 
             using (SqlConnection sqlCon = new SqlConnection(conString))
-            {
+            {              
 
                 sqlCon.Open();
                 SqlDataAdapter sqlData = new SqlDataAdapter("Select * from Appointment", sqlCon);
