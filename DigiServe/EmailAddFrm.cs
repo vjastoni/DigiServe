@@ -10,7 +10,10 @@ namespace DigiServe
 {
     public partial class EmailAddFrm : Form
     {
-        string email,emailtest;
+        public static string email; // make email identifier usable in ForgotPasswordFrm
+        string emailtest;
+
+
         public EmailAddFrm()
         {
             InitializeComponent();

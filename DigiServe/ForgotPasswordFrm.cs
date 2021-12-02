@@ -10,8 +10,14 @@ namespace DigiServe
 {
     public partial class Forgot_password_frm : Form
     {
-        private string password,newPassword;
-        
+        private string password,newPassword,emailtest, email1;
+
+        private void Forgot_password_frm_Load(object sender, EventArgs e)
+        {
+            // code to get the email entered in EmailAddFrm 
+            email1 = EmailAddFrm.email;
+        }
+
         public Forgot_password_frm()
         {
             InitializeComponent();
@@ -38,6 +44,7 @@ namespace DigiServe
             String testpass = "password1234";
             password = CurrentPass_txtbx.Text;
             newPassword = NewPass_txtbox.Text;
+            emailtest = "testemail1@gmail.com";
 
 
             if (testpass == password)
@@ -46,6 +53,10 @@ namespace DigiServe
                 MessageBox.Show("Your password had been sucessfully changed");
                 Dispose();
                 
+            }
+            else if (password == testpass || emailtest != email1) 
+            {
+                MessageBox.Show("The password does not correspond to the email");
             }
             else if (password == "" )
             {
