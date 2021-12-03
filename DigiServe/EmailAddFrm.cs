@@ -15,7 +15,7 @@ namespace DigiServe
     public partial class EmailAddFrm : Form
     {
 
-        private string conString = "Data source shit";
+        private string conString = "Data source sssshit";
         string randomCode;
 
         public EmailAddFrm()
@@ -35,6 +35,7 @@ namespace DigiServe
             SqlCommand cmd = new SqlCommand(emailCheck, con);
             SqlDataReader checkedEmail = cmd.ExecuteReader();
             checkedEmail.Read();
+            
 
             if (checkedEmail["EMAIL_TABLE_NAME"].ToString() == email)
             {
