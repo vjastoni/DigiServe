@@ -45,7 +45,7 @@ namespace DigiServe
         {
             if (newPass_txtbx.Text == verifyNewPass_txtbox.Text)
             {
-                SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-8HAO55D\SQLEXPRESS;Initial Catalog=DB_Appointment;Integrated Security=True");
+                SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-8HAO55D\SQLEXPRESS;Initial Catalog=DB_Reserve;Integrated Security=True");
                 SqlCommand cmd = new SqlCommand("Update Register set password =  '" + newPass_txtbx.Text + "' where email = '" + email + "' ", con);
                 con.Open();
                 cmd.ExecuteNonQuery();

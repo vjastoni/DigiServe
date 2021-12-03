@@ -52,7 +52,6 @@ namespace DigiServe
             DigiServeFrm Login;
             Login = new DigiServeFrm();
             Login.ShowDialog();
-
         }
     }
 }

@@ -32,9 +32,11 @@ namespace DigiServe
             messageBody = " Email Verified! \n Verification Code : " + randomCode + " .";
             email = EmailAdd_txtbx.Text;
             emailCheck = "select email from Register where email = '"+email+"' ";
+            con.Open();
             SqlCommand cmd = new SqlCommand(emailCheck, con);
             SqlDataReader checkedEmail = cmd.ExecuteReader();
             checkedEmail.Read();
+           
             
 
             if (checkedEmail["email"].ToString() == email)
@@ -45,18 +47,18 @@ namespace DigiServe
             {
                 MessageBox.Show("Email not recognized!!");
             }
-            
-   
-            
+
+
+            con.Close(); 
         }
 
         private void btnVerify_Click(object sender, EventArgs e)
         {
             if(randomCode == (txtVerCode.Text).ToString())
             {
-                Forgot_password_frm fgot = new Forgot_password_frm();
-                this.Hide();
+                Forgot_password_frm fgot = new Forgot_password_frm();    
                 fgot.Show();
+                this.Hide();
             }
 
             else
