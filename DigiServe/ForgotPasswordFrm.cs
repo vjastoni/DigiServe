@@ -5,17 +5,18 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace DigiServe
 {
     public partial class Forgot_password_frm : Form
     {
-        private string password,newPassword,emailtest, email1;
+        string email = EmailAddFrm.email;
 
         private void Forgot_password_frm_Load(object sender, EventArgs e)
         {
-            // code to get the email entered in EmailAddFrm 
-            email1 = EmailAddFrm.email;
+          
         }
 
         public Forgot_password_frm()
@@ -25,51 +26,38 @@ namespace DigiServe
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-           if (CurrentPass_txtbx.UseSystemPasswordChar == true) 
+
+           if (newPass_txtbx.UseSystemPasswordChar == true) 
             { 
-                CurrentPass_txtbx.UseSystemPasswordChar = false;
-                NewPass_txtbox.UseSystemPasswordChar = false;
+                newPass_txtbx.UseSystemPasswordChar = false;
+                verifyNewPass_txtbox.UseSystemPasswordChar = false;
             }
+
            else
             {
-                CurrentPass_txtbx.UseSystemPasswordChar = true;
-                NewPass_txtbox.UseSystemPasswordChar = true;
+                newPass_txtbx.UseSystemPasswordChar = true;
+                verifyNewPass_txtbox.UseSystemPasswordChar = true;
             }
 
         }
 
         private void Submit_btn_Click(object sender, EventArgs e)
         {
-            //Pang testing lang to 
-            String testpass = "password1234";
-            password = CurrentPass_txtbx.Text;
-            newPassword = NewPass_txtbox.Text;
-            emailtest = "testemail1@gmail.com";
-
-
-            if (testpass == password)
+            if (newPass_txtbx.Text == verifyNewPass_txtbox.Text)
             {
-
+                SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-8HAO55D\SQLEXPRESS;Initial Catalog=DB_Appointment;Integrated Security=True");
+                SqlCommand cmd = new SqlCommand("Update TABLE_NAMEDITO set PASS_COLUMN_NAME =  '" + newPass_txtbx.Text + "' where Email_Column_Name = '" + email + "' ", con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
                 MessageBox.Show("Your password had been sucessfully changed");
                 Dispose();
-                
+
             }
-            else if (password == testpass || emailtest != email1) 
-            {
-                MessageBox.Show("The password does not correspond to the email");
-            }
-            else if (password == "" )
-            {
-                MessageBox.Show("Current password is empty");
-            }
-            else if (newPassword == "")
-            {
-                MessageBox.Show("New password is empty");
-            }
-            else 
+            else
             {
                 MessageBox.Show("Current password does not match");
-                
+
             }
 
         }

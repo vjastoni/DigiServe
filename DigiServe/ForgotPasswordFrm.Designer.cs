@@ -32,8 +32,8 @@ namespace DigiServe
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Forgot_password_frm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.CurrentPass_txtbx = new System.Windows.Forms.TextBox();
-            this.NewPass_txtbox = new System.Windows.Forms.TextBox();
+            this.newPass_txtbx = new System.Windows.Forms.TextBox();
+            this.verifyNewPass_txtbox = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.Submit_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -43,47 +43,50 @@ namespace DigiServe
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(12, 36);
+            this.label1.Location = new System.Drawing.Point(10, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 17);
+            this.label1.Size = new System.Drawing.Size(102, 14);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Current Password :";
+            this.label1.Text = "New Password :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(12, 86);
+            this.label2.Location = new System.Drawing.Point(10, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 17);
+            this.label2.Size = new System.Drawing.Size(110, 14);
             this.label2.TabIndex = 1;
-            this.label2.Text = "New Password :";
+            this.label2.Text = "Verify Password :";
             // 
-            // CurrentPass_txtbx
+            // newPass_txtbx
             // 
-            this.CurrentPass_txtbx.Location = new System.Drawing.Point(188, 33);
-            this.CurrentPass_txtbx.Name = "CurrentPass_txtbx";
-            this.CurrentPass_txtbx.Size = new System.Drawing.Size(191, 27);
-            this.CurrentPass_txtbx.TabIndex = 3;
-            this.CurrentPass_txtbx.UseSystemPasswordChar = true;
+            this.newPass_txtbx.Location = new System.Drawing.Point(164, 25);
+            this.newPass_txtbx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.newPass_txtbx.Name = "newPass_txtbx";
+            this.newPass_txtbx.Size = new System.Drawing.Size(168, 23);
+            this.newPass_txtbx.TabIndex = 3;
+            this.newPass_txtbx.UseSystemPasswordChar = true;
             // 
-            // NewPass_txtbox
+            // verifyNewPass_txtbox
             // 
-            this.NewPass_txtbox.Location = new System.Drawing.Point(188, 79);
-            this.NewPass_txtbox.Name = "NewPass_txtbox";
-            this.NewPass_txtbox.Size = new System.Drawing.Size(191, 27);
-            this.NewPass_txtbox.TabIndex = 4;
-            this.NewPass_txtbox.UseSystemPasswordChar = true;
+            this.verifyNewPass_txtbox.Location = new System.Drawing.Point(164, 59);
+            this.verifyNewPass_txtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.verifyNewPass_txtbox.Name = "verifyNewPass_txtbox";
+            this.verifyNewPass_txtbox.Size = new System.Drawing.Size(168, 23);
+            this.verifyNewPass_txtbox.TabIndex = 4;
+            this.verifyNewPass_txtbox.UseSystemPasswordChar = true;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.checkBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBox1.Location = new System.Drawing.Point(233, 124);
+            this.checkBox1.Location = new System.Drawing.Point(212, 93);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(146, 21);
+            this.checkBox1.Size = new System.Drawing.Size(120, 18);
             this.checkBox1.TabIndex = 6;
             this.checkBox1.Text = "Show Password";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -93,9 +96,10 @@ namespace DigiServe
             // 
             this.Submit_btn.BackColor = System.Drawing.Color.Gold;
             this.Submit_btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Submit_btn.Location = new System.Drawing.Point(285, 151);
+            this.Submit_btn.Location = new System.Drawing.Point(250, 115);
+            this.Submit_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Submit_btn.Name = "Submit_btn";
-            this.Submit_btn.Size = new System.Drawing.Size(94, 29);
+            this.Submit_btn.Size = new System.Drawing.Size(82, 22);
             this.Submit_btn.TabIndex = 7;
             this.Submit_btn.Text = "Submit";
             this.Submit_btn.UseVisualStyleBackColor = false;
@@ -103,19 +107,20 @@ namespace DigiServe
             // 
             // Forgot_password_frm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
-            this.ClientSize = new System.Drawing.Size(427, 218);
+            this.ClientSize = new System.Drawing.Size(374, 164);
             this.Controls.Add(this.Submit_btn);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.NewPass_txtbox);
-            this.Controls.Add(this.CurrentPass_txtbx);
+            this.Controls.Add(this.verifyNewPass_txtbox);
+            this.Controls.Add(this.newPass_txtbx);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(445, 265);
+            this.MaximumSize = new System.Drawing.Size(391, 209);
             this.MinimizeBox = false;
             this.Name = "Forgot_password_frm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -130,8 +135,8 @@ namespace DigiServe
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox CurrentPass_txtbx;
-        private System.Windows.Forms.TextBox NewPass_txtbox;
+        private System.Windows.Forms.TextBox newPass_txtbx;
+        private System.Windows.Forms.TextBox verifyNewPass_txtbox;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button Submit_btn;
     }
