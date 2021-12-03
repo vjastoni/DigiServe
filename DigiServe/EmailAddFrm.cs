@@ -32,15 +32,17 @@ namespace DigiServe
             randomCode = (rdm.Next(999999)).ToString();
             MailMessage message = new MailMessage();
             email = (EmailAdd_txtbx.Text).ToString();
-            from = "email galing sa sql so may code shit";// lagay mo dito ung sa SQL na email;
-            pass = "pass galing sa sql again :)";// lagay mo dito ung sa sql na password;
+            from = "vjastoni13@gmail.com";
+            pass = "armvmxznqwbaprg";
 
             messageBody = " your reset code is : " + randomCode;
             message.To.Add(email);
             message.From = new MailAddress(from);
             message.Body = messageBody;
             message.Subject = "Password resseting code";
+            System.Net.NetworkCredential credential = new NetworkCredential();
             SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+            smtp.Credentials = credential;
             smtp.EnableSsl = true;
             smtp.Port = 587;
             smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
