@@ -15,7 +15,7 @@ namespace DigiServe
     public partial class EmailAddFrm : Form
     {
 
-        public static string email; // make email identifier usable in ForgotPasswordFrm
+        private string conString = "Data source shit";
         string randomCode;
 
         public EmailAddFrm()
@@ -25,39 +25,27 @@ namespace DigiServe
 
         private void Subtmitbtn_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-8HAO55D\SQLEXPRESS;Initial Catalog=DB_Appointment;Integrated Security=True");
-
-            string from, pass, messageBody;
+            SqlConnection con = new SqlConnection(conString);
+            string email, emailCheck, messageBody;
             Random rdm = new Random();
             randomCode = (rdm.Next(999999)).ToString();
-            MailMessage message = new MailMessage();
-            email = (EmailAdd_txtbx.Text).ToString();
-            from = "vjastoni13@gmail.com";
-            pass = "armvmxznqwbaprg";
+            messageBody = " Email Verified! \n Verification Code : " + randomCode + " .";
+            email = EmailAdd_txtbx.Text;
+            emailCheck = "select shit from email = '"+email+"' ";
+            SqlCommand cmd = new SqlCommand(emailCheck, con);
+            SqlDataReader checkedEmail = cmd.ExecuteReader();
+            checkedEmail.Read();
 
-            messageBody = " your reset code is : " + randomCode;
-            message.To.Add(email);
-            message.From = new MailAddress(from);
-            message.Body = messageBody;
-            message.Subject = "Password resseting code";
-            System.Net.NetworkCredential credential = new NetworkCredential();
-            SmtpClient smtp = new SmtpClient("smtp.gmail.com");
-            smtp.Credentials = credential;
-            smtp.EnableSsl = true;
-            smtp.Port = 587;
-            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-            smtp.Credentials = new NetworkCredential(from, pass);
-
-            try
+            if (checkedEmail["EMAIL_TABLE_NAME"].ToString() == email)
             {
-                smtp.Send(message);
-                MessageBox.Show("Code send successfully \n Check your email :) ");
+                MessageBox.Show(messageBody);
             }
-
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Email not recognized!!");
             }
+            
+   
             
         }
 
@@ -65,7 +53,6 @@ namespace DigiServe
         {
             if(randomCode == (txtVerCode.Text).ToString())
             {
-                email = EmailAdd_txtbx.Text;
                 Forgot_password_frm fgot = new Forgot_password_frm();
                 this.Hide();
                 fgot.Show();
