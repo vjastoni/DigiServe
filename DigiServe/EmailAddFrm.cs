@@ -14,7 +14,7 @@ namespace DigiServe
 {
     public partial class EmailAddFrm : Form
     {
-
+        public static string email;
         private string conString = @"Data Source=DESKTOP-8HAO55D\SQLEXPRESS;Initial Catalog=DB_Reserve;Integrated Security=True";
         string randomCode;
 
@@ -26,7 +26,7 @@ namespace DigiServe
         private void Subtmitbtn_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(conString);
-            string email, emailCheck, messageBody;
+            string  emailCheck, messageBody;
             Random rdm = new Random();
             randomCode = (rdm.Next(999999)).ToString();
             messageBody = " Email Verified! \n Verification Code : " + randomCode + " .";
