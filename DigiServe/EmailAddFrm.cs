@@ -29,14 +29,23 @@ namespace DigiServe
             string email, emailCheck, messageBody;
             Random rdm = new Random();
             randomCode = (rdm.Next(999999)).ToString();
-            messageBody = " Email Verified! \n Verification Code : " + randomCode + " .";
-            email = EmailAdd_txtbx.Text;
-            emailCheck = "select shit from email = '"+email+"' ";
-            SqlCommand cmd = new SqlCommand(emailCheck, con);
-            SqlDataReader checkedEmail = cmd.ExecuteReader();
-            checkedEmail.Read();
+            MailMessage message = new MailMessage();
+            email = (EmailAdd_txtbx.Text).ToString();
+            from = "email galing sa sql so may code shit";// lagay mo dito ung sa SQL na email;
+            pass = "pass galing sa sql again :)";// lagay mo dito ung sa sql na password;
 
-            if (checkedEmail["EMAIL_TABLE_NAME"].ToString() == email)
+            messageBody = " your reset code is : " + randomCode;
+            message.To.Add(email);
+            message.From = new MailAddress(from);
+            message.Body = messageBody;
+            message.Subject = "Password resseting code";
+            SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+            smtp.EnableSsl = true;
+            smtp.Port = 587;
+            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+            smtp.Credentials = new NetworkCredential(from, pass);
+
+            try
             {
                 MessageBox.Show(messageBody);
             }
