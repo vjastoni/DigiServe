@@ -15,7 +15,7 @@ namespace DigiServe
     public partial class EmailAddFrm : Form
     {
 
-        private string conString = "Data source sssshit";
+        private string conString = @"Data Source=DESKTOP-8HAO55D\SQLEXPRESS;Initial Catalog=DB_Reserve;Integrated Security=True";
         string randomCode;
 
         public EmailAddFrm()
@@ -31,13 +31,13 @@ namespace DigiServe
             randomCode = (rdm.Next(999999)).ToString();
             messageBody = " Email Verified! \n Verification Code : " + randomCode + " .";
             email = EmailAdd_txtbx.Text;
-            emailCheck = "select shit from email = '"+email+"' ";
+            emailCheck = "select email from Register where email = '"+email+"' ";
             SqlCommand cmd = new SqlCommand(emailCheck, con);
             SqlDataReader checkedEmail = cmd.ExecuteReader();
             checkedEmail.Read();
             
 
-            if (checkedEmail["EMAIL_TABLE_NAME"].ToString() == email)
+            if (checkedEmail["email"].ToString() == email)
             {
                 MessageBox.Show(messageBody);
             }
